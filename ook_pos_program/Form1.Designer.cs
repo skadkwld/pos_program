@@ -83,14 +83,19 @@
             this.button39 = new System.Windows.Forms.Button();
             this.button40 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.button24 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.label24 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.panel12.SuspendLayout();
             this.panel19.SuspendLayout();
             this.panel18.SuspendLayout();
@@ -106,7 +111,6 @@
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -433,6 +437,7 @@
             this.panel11.Controls.Add(this.label6);
             this.panel11.Controls.Add(this.textBoxgive);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel11.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel11.Location = new System.Drawing.Point(0, 420);
             this.panel11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel11.Name = "panel11";
@@ -457,7 +462,7 @@
             this.textBoxgive.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxgive.Enabled = false;
             this.textBoxgive.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBoxgive.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.textBoxgive.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBoxgive.Location = new System.Drawing.Point(111, 35);
             this.textBoxgive.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxgive.Multiline = true;
@@ -472,6 +477,7 @@
             this.panel10.Controls.Add(this.label5);
             this.panel10.Controls.Add(this.textBoxgot);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel10.Location = new System.Drawing.Point(0, 315);
             this.panel10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel10.Name = "panel10";
@@ -495,7 +501,7 @@
             this.textBoxgot.BackColor = System.Drawing.Color.Black;
             this.textBoxgot.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxgot.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBoxgot.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.textBoxgot.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBoxgot.Location = new System.Drawing.Point(111, 35);
             this.textBoxgot.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxgot.Multiline = true;
@@ -510,6 +516,7 @@
             this.panel9.Controls.Add(this.label4);
             this.panel9.Controls.Add(this.textBoxget);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel9.Location = new System.Drawing.Point(0, 210);
             this.panel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel9.Name = "panel9";
@@ -534,7 +541,7 @@
             this.textBoxget.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxget.Enabled = false;
             this.textBoxget.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBoxget.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.textBoxget.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBoxget.Location = new System.Drawing.Point(111, 35);
             this.textBoxget.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxget.Multiline = true;
@@ -549,6 +556,7 @@
             this.panel6.Controls.Add(this.label2);
             this.panel6.Controls.Add(this.textBoxdc);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel6.Location = new System.Drawing.Point(0, 105);
             this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel6.Name = "panel6";
@@ -573,7 +581,7 @@
             this.textBoxdc.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxdc.Enabled = false;
             this.textBoxdc.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBoxdc.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.textBoxdc.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBoxdc.Location = new System.Drawing.Point(111, 35);
             this.textBoxdc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxdc.Multiline = true;
@@ -588,6 +596,7 @@
             this.panel5.Controls.Add(this.label1);
             this.panel5.Controls.Add(this.textBoxsum);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
@@ -612,7 +621,7 @@
             this.textBoxsum.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxsum.Enabled = false;
             this.textBoxsum.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBoxsum.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.textBoxsum.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBoxsum.Location = new System.Drawing.Point(113, 32);
             this.textBoxsum.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxsum.Multiline = true;
@@ -744,7 +753,6 @@
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.panel3);
             this.panel8.Location = new System.Drawing.Point(666, 92);
             this.panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel8.MaximumSize = new System.Drawing.Size(977, 748);
@@ -813,20 +821,37 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Black;
+            this.panel7.Controls.Add(this.button24);
             this.panel7.Controls.Add(this.button14);
             this.panel7.Controls.Add(this.label24);
             this.panel7.Location = new System.Drawing.Point(155, 29);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1488, 28);
+            this.panel7.Size = new System.Drawing.Size(1473, 30);
             this.panel7.TabIndex = 211;
+            // 
+            // button24
+            // 
+            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button24.Font = new System.Drawing.Font("한컴 고딕", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button24.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button24.Location = new System.Drawing.Point(1427, 2);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(43, 25);
+            this.button24.TabIndex = 186;
+            this.button24.Text = "X";
+            this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
             // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(1380, 2);
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.Font = new System.Drawing.Font("한컴 고딕", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button14.Location = new System.Drawing.Point(1378, 2);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(105, 23);
+            this.button14.Size = new System.Drawing.Size(43, 25);
             this.button14.TabIndex = 0;
-            this.button14.Text = "시스템종료";
+            this.button14.Text = "<-";
             this.button14.UseVisualStyleBackColor = true;
             this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
@@ -852,10 +877,11 @@
             "Small",
             "Medium",
             "Large"});
-            this.comboBox1.Location = new System.Drawing.Point(666, 63);
+            this.comboBox1.Location = new System.Drawing.Point(500, 61);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(145, 23);
             this.comboBox1.TabIndex = 210;
+            this.comboBox1.Visible = false;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label3
@@ -869,10 +895,6 @@
             this.label3.TabIndex = 212;
             this.label3.Text = "OOK POS";
             // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
-            // 
             // dataGridView2
             // 
             this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -884,21 +906,74 @@
             this.dataGridView2.Size = new System.Drawing.Size(627, 296);
             this.dataGridView2.TabIndex = 213;
             // 
-            // panel1
+            // button8
             // 
-            this.panel1.Location = new System.Drawing.Point(1502, 869);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(224, 126);
-            this.panel1.TabIndex = 214;
-            this.panel1.Visible = false;
+            this.button8.Location = new System.Drawing.Point(1512, 849);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(226, 139);
+            this.button8.TabIndex = 214;
+            this.button8.Text = "주문이 들어왔습니다";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Visible = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
-            // panel3
+            // button18
             // 
-            this.panel3.Location = new System.Drawing.Point(836, 645);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(224, 126);
-            this.panel3.TabIndex = 0;
-            this.panel3.Visible = false;
+            this.button18.Location = new System.Drawing.Point(1512, 704);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(226, 139);
+            this.button18.TabIndex = 215;
+            this.button18.Text = "주문이 들어왔습니다";
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Visible = false;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
+            // 
+            // button23
+            // 
+            this.button23.Location = new System.Drawing.Point(1512, 559);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(226, 139);
+            this.button23.TabIndex = 216;
+            this.button23.Text = "주문이 들어왔습니다";
+            this.button23.UseVisualStyleBackColor = true;
+            this.button23.Visible = false;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(673, 68);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(58, 19);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "스몰";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(804, 68);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(73, 19);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "미디움";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(942, 68);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(58, 19);
+            this.radioButton3.TabIndex = 2;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "라지";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // Form1
             // 
@@ -906,7 +981,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1903, 1033);
             this.ControlBox = false;
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.radioButton3);
+            this.Controls.Add(this.button23);
+            this.Controls.Add(this.button18);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel7);
@@ -952,7 +1032,6 @@
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel8.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
@@ -1023,8 +1102,13 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }
 

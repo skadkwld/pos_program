@@ -11,11 +11,16 @@ using System.Windows.Forms;
 using MySql.Data.Common;
 using MySql.Data.MySqlClient;
 using MetroFramework.Forms;
+using System.Media;
+using System.IO;
+
 
 namespace ook_pos_program
 {
     public partial class Form1 : MetroFramework.Forms.MetroForm
     {
+        SoundPlayer sp = new SoundPlayer();
+        string file = (string)@"C:\효과음5.wav";
         public delegate int delMessage(object sender, string strResult);
         public event delMessage eventdelMessage;
         string strconn = string.Format(@"server=localhost;database=kiosk;user=root;password=1234");
@@ -23,19 +28,24 @@ namespace ook_pos_program
         order order = new order();
         adapter ad = new adapter();
         order_small small = new order_small();
+        order_medium medium = new order_medium();
+        order_large large = new order_large();
         DataTable dt = new DataTable();
         Thread th=null;
+        int new_row = 0;
 
         public Form1()
         {
             InitializeComponent();
             timer1.Start();
             timer1.Interval = 1000;
-            small.eventClick += Order_small_eventClick;
-            panel8.Controls.Add(small);
-            timer1.Tick += Timer1_Tick;
-            label24.Text = DateTime.Now.ToString();
-            label24.TextAlign = ContentAlignment.MiddleCenter;
+            //small.eventClick += Order_small_eventClick;
+            //panel8.Controls.Add(small);
+
+            //시계
+            //timer1.Tick += Timer1_Tick;
+            //label24.Text = DateTime.Now.ToString();
+            //label24.TextAlign = ContentAlignment.MiddleCenter;
 
             
             dt.Columns.Add("이름", typeof(string));
@@ -68,52 +78,72 @@ namespace ook_pos_program
             int count2 = 0;
             string app_or_pos = string.Empty;
             MySqlConnection conn = new MySqlConnection(strconn);
-            string watch = "select count(*) from orderMenu";
-            string app_pos = "select confirmed from orderMenu";
+            string watch = "select max(idorderMenu) from orderMenu";
+            string app_pos = "select confirmed from orderMenu where idorderMenu='#idorderMenu'"; //주문이 완료 되었는지 여부를 알려주는 데이터 뽑기
+            string rowNum = "select idorderMenu from orderMenu where idorderMenu='#idorderMenu'"; //현재 행을 알아내기 위한 쿼리문
             //string infoQuery = "select * from oneOrder where idorderMenu=#idorderMenu";
             MySqlCommand cmd = new MySqlCommand(watch, conn);
-            MySqlCommand cmd_app_pos = new MySqlCommand(app_pos, conn);
+            MySqlCommand cmd_app_pos;
+            MySqlCommand cmd_newRow;
+            int row_number = 0;
 
 
             while (true)
             {
                 conn.Open();
                 count1 = Convert.ToInt32(cmd.ExecuteScalar());
+                //MessageBox.Show(count1.ToString()); //디버깅용
                 app_pos = app_pos.Replace("#idorderMenu", count1.ToString());
-                app_or_pos = Convert.ToString(cmd_app_pos.ExecuteScalar());
+                cmd_app_pos = new MySqlCommand(app_pos, conn);
+                app_or_pos =(string)cmd_app_pos.ExecuteScalar();
                 //infoQuery = infoQuery.Replace("#idorderMenu", count1.ToString());
                 IOS_Order goPanel = new IOS_Order();
-                App_order go_panel = new App_order();
+                App_order go_panel;
 
                 if (i == 0)
                 {
                     count2 = count1;
                 }
-                if (count1 != count2)
+                if (count1 > count2)
                 {
                     if (app_or_pos == "F")
                     {
                         if (this.InvokeRequired)
                         {
+                            rowNum = rowNum.Replace("#idorderMenu", count1.ToString()); //ios에서 추가한 주문의 행번호
+                            cmd_newRow = new MySqlCommand(rowNum, conn);
+                            row_number = Convert.ToInt32(cmd_newRow.ExecuteScalar());
                             this.Invoke(new Action(delegate ()
                             {
-                                if (j > 0)
+                                if (order.button_click == 0)
                                 {
-                                    //panel3.BringToFront();
-                                    //panel3.Visible = true;
-                                    //panel3.Controls.Add(goPanel);
-                                    //go_panel.Location = new Point(836, 645);
-                                    go_panel.Show();
+                                    //go_panel = new App_order(row_number);
+                                    //go_panel.Show();
+                                    order.button_click++;
+                                    new_row = row_number;
+                                    sp.SoundLocation = file;
+                                    sp.Play();
+                                    button8.Visible = true;
                                 }
                                 //MessageBox.Show(string.Format("앱에서 주문이 들어왔습니다."));
-                                else 
+                                else if(order.button_click == 1)
                                 {
-                                    //go_panel.Location = new Point(1502, 869);
-                                    go_panel.Show();
-                                    //panel1.Visible = true;
-                                    //panel1.Controls.Clear();
-                                    //panel1.Controls.Add(goPanel);
-                                    //j++;
+                                    //go_panel = new App_order(row_number);
+                                    //go_panel.Show();
+                                    order.button_click++;
+                                    new_row = row_number;
+                                    sp.SoundLocation = file;
+                                    sp.Play();
+                                    button18.Visible = true;
+                                }
+                                else if(order.button_click == 2)
+                                {
+                                    //go_panel = new App_order(row_number);
+                                    //go_panel.Show();
+                                    sp.SoundLocation = file;
+                                    sp.Play();
+                                    new_row = row_number;
+                                    button23.Visible = true;
                                 }
                                 this.Refresh();
                             }));
@@ -150,10 +180,10 @@ namespace ook_pos_program
 
             Form_PayCash cashForm = new Form_PayCash();
 
-            cashForm.getArray(strData,order.HowManyInsert);
+            cashForm.getArray(strData,order.HowManyInsert,order.price);
             cashForm.ShowDialog();
             
-        }
+        } //현금결제 버튼
 
         private int Cash_eventcash()
         {
@@ -196,31 +226,41 @@ namespace ook_pos_program
             }
         }
 
-        private int Large_eventClick_l(int price, DataTable dt)
+        #region evnetClick
+        private int Order_small_eventClick(int price, DataTable dt, int HowManyka)
         {
-            textBoxget.Text = price.ToString();  //내야할 비용 int로 받아서 string으로 출력
-            textBoxsum.Text = price.ToString();
-            dataGridView1.DataSource = dt;
-            return 0;
-        }
-
-        private int Medium_eventClick_m(int price, DataTable dt)
-        {
-            textBoxget.Text = price.ToString();  //내야할 비용 int로 받아서 string으로 출력
-            textBoxsum.Text = price.ToString();
-            dataGridView1.DataSource = dt;
-            return 0;
-        }
-
-        private int Order_small_eventClick(int price, DataTable dt,int HowManyka)
-        {
-            textBoxget.Text = price.ToString();  //내야할 비용 int로 받아서 string으로 출력
-            textBoxsum.Text = price.ToString();
+            order.price += price;
+            textBoxget.Text = order.price.ToString();  //내야할 비용 int로 받아서 string으로 출력
+            textBoxsum.Text = order.price.ToString();
             dataGridView1.DataSource = dt;
             dataGridView2.DataSource = dt;
-            order.HowManyInsert = HowManyka;
+            order.HowManyInsert += HowManyka;
             return 0;
         }
+
+        private int Large_eventClick_l(int price, DataTable dt, int HowManyka)
+        {
+            order.price += price;
+            textBoxget.Text = order.price.ToString();  //내야할 비용 int로 받아서 string으로 출력
+            textBoxsum.Text = order.price.ToString();
+            dataGridView1.DataSource = dt;
+            dataGridView2.DataSource = dt;
+            order.HowManyInsert += HowManyka;
+            return 0;
+        }
+
+        private int Medium_eventClick_m(int price, DataTable dt, int HowManyka)
+        {
+            order.price += price;
+            textBoxget.Text = order.price.ToString();  //내야할 비용 int로 받아서 string으로 출력
+            textBoxsum.Text = order.price.ToString();
+            dataGridView1.DataSource = dt;
+            dataGridView2.DataSource = dt;
+            order.HowManyInsert += HowManyka;
+            return 0;
+        }
+
+        #endregion
 
         #endregion
 
@@ -313,17 +353,16 @@ namespace ook_pos_program
             }
         }
 
-        private void timer1_Tick_1(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void button14_Click(object sender, EventArgs e)
         {
-            th.Abort();
-            timer1.Stop();
-            Application.Exit();
-        } //종료
+            string noLogin = "noLogin";
+            this.Visible = false; //현재 폼 안보이게 하기
+            Form2 frm = new Form2(noLogin);
+            frm.Owner = this; //form1의 오너를 현재 폼으로
+            frm.Show(); //form1 보여주기
+        } //뒤로가기
 
         private void button6_Click(object sender, EventArgs e)
         {
@@ -344,6 +383,148 @@ namespace ook_pos_program
                 temp = int.Parse(countVal);
                 temp++;
                 dgr.Cells[1].Value = temp.ToString();
+            }
+        }
+
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            comed_order();
+
+        } //주문이 들어왔습니다.
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            comed_order();
+
+
+        } //주문이 들어왔습니다.
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            comed_order();
+
+        } //주문이 들어왔습니다.
+
+        public void comed_order()
+        {
+            order.button_click = 0;
+            button8.Visible = false;
+            button18.Visible = false;
+            button23.Visible = false;
+
+            confirm_order co = new confirm_order(new_row);
+            co.Show();
+            MessageBox.Show(new_row.ToString());
+
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            th.Abort();
+            timer1.Stop();
+            Application.Exit();
+        }
+
+        private void button25_MouseMove(object sender, MouseEventArgs e)
+        {
+            //button25.BackColor = Color.FromArgb(128, 128, 255);
+        }
+
+        private void button26_MouseMove(object sender, MouseEventArgs e)
+        {
+           // button26.BackColor = Color.FromArgb(128, 128, 255);
+        }
+
+        private void button27_MouseMove(object sender, MouseEventArgs e)
+        {
+            //button27.BackColor = Color.FromArgb(128, 128, 255);
+        }
+
+        private void button25_MouseLeave(object sender, EventArgs e)
+        {
+            //button25.BackColor = Color.FromArgb(0, 0, 64);
+        }
+
+        private void button26_MouseLeave(object sender, EventArgs e)
+        {
+            //button26.BackColor = Color.FromArgb(0, 0, 64);
+        }
+
+        private void button27_MouseLeave(object sender, EventArgs e)
+        {
+            //button27.BackColor = Color.FromArgb(0, 0, 64);
+        }
+
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            small.eventClick += Order_small_eventClick;
+
+            panel8.Controls.Clear();
+            panel8.Controls.Add(small);
+            small.dt_exchange(dt); //small에 선언한 함수에 데이터 전달
+        } //스몰
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            medium.eventClick_m += Medium_eventClick_m;
+            panel8.Controls.Clear();
+            panel8.Controls.Add(medium);
+            medium.dt_exchange(dt); //medium에 선언한 함수에 데이터 전달
+        } //미디움
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            large.eventClick_l += Large_eventClick_l;
+            panel8.Controls.Clear();
+            panel8.Controls.Add(large);
+            large.dt_exchange(dt); //large에 선언한 함수에 데이터 전달
+
+        } //라지
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+            small.eventClick += Order_small_eventClick;
+
+            panel8.Controls.Clear();
+            panel8.Controls.Add(small);
+            small.dt_exchange(dt); //small에 선언한 함수에 데이터 전달
+        } //스몰버튼
+
+        private void button26_Click(object sender, EventArgs e)
+        {
+            medium.eventClick_m += Medium_eventClick_m;
+            panel8.Controls.Clear();
+            panel8.Controls.Add(medium);
+            medium.dt_exchange(dt); //medium에 선언한 함수에 데이터 전달
+        } //미디움버튼
+
+        private void button27_Click(object sender, EventArgs e)
+        {
+            large.eventClick_l += Large_eventClick_l;
+            panel8.Controls.Clear();
+            panel8.Controls.Add(large);
+            large.dt_exchange(dt); //large에 선언한 함수에 데이터 전달
+        } //라지버튼
+
+        public void IOToPrint()
+        {
+            string fst_line = string.Empty;
+            string snd_line = string.Empty;
+            string thrd_line = string.Empty;
+            string four_line = string.Empty;
+            string five_line = string.Empty;
+            string[] lines = { fst_line, snd_line, thrd_line,four_line,five_line};
+
+
+
+            using (StreamWriter outputFile = new StreamWriter(@"C:\Users\eoaud\source\repos\FileIO_test\FileIO_test\test.txt"))
+            {
+                foreach (string line in lines)
+                {
+                    outputFile.WriteLine(line);
+                }
             }
         }
     }

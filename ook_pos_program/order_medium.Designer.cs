@@ -206,6 +206,7 @@
             this.button94.TabIndex = 250;
             this.button94.Text = "바닐라크림 \r\n콜드브루 미디움";
             this.button94.UseVisualStyleBackColor = false;
+            this.button94.Click += new System.EventHandler(this.button94_Click);
             // 
             // button95
             // 
@@ -233,6 +234,7 @@
             this.button96.TabIndex = 252;
             this.button96.Text = "콜드브루\r\n미디움";
             this.button96.UseVisualStyleBackColor = false;
+            this.button96.Click += new System.EventHandler(this.button96_Click);
             // 
             // button97
             // 
@@ -582,8 +584,9 @@
             this.button124.Name = "button124";
             this.button124.Size = new System.Drawing.Size(132, 76);
             this.button124.TabIndex = 279;
-            this.button124.Text = "타로 스무디";
+            this.button124.Text = "타로스무디 \r\n미디움";
             this.button124.UseVisualStyleBackColor = false;
+            this.button124.Click += new System.EventHandler(this.button124_Click);
             // 
             // button125
             // 
@@ -595,8 +598,9 @@
             this.button125.Name = "button125";
             this.button125.Size = new System.Drawing.Size(132, 76);
             this.button125.TabIndex = 280;
-            this.button125.Text = "망고 스무디";
+            this.button125.Text = "망고스무디\r\n미디움";
             this.button125.UseVisualStyleBackColor = false;
+            this.button125.Click += new System.EventHandler(this.button125_Click);
             // 
             // button126
             // 
@@ -618,8 +622,9 @@
             this.button127.Name = "button127";
             this.button127.Size = new System.Drawing.Size(132, 76);
             this.button127.TabIndex = 281;
-            this.button127.Text = "초콜렛 \r\n스무디";
+            this.button127.Text = "초콜렛스무디\r\n미디움";
             this.button127.UseVisualStyleBackColor = false;
+            this.button127.Click += new System.EventHandler(this.button127_Click);
             // 
             // button128
             // 
@@ -641,8 +646,9 @@
             this.button129.Name = "button129";
             this.button129.Size = new System.Drawing.Size(132, 76);
             this.button129.TabIndex = 282;
-            this.button129.Text = "모카 스무디";
+            this.button129.Text = "모카스무디\r\n미디움";
             this.button129.UseVisualStyleBackColor = false;
+            this.button129.Click += new System.EventHandler(this.button129_Click);
             // 
             // button130
             // 

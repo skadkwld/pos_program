@@ -206,6 +206,7 @@
             this.btn_coldbrew_2.TabIndex = 254;
             this.btn_coldbrew_2.Text = "바닐라크림 \r\n콜드브루 스몰";
             this.btn_coldbrew_2.UseVisualStyleBackColor = false;
+            this.btn_coldbrew_2.Click += new System.EventHandler(this.btn_coldbrew_2_Click);
             // 
             // btn_coldbrew_1
             // 
@@ -233,6 +234,7 @@
             this.btn_coldbrew_3.TabIndex = 256;
             this.btn_coldbrew_3.Text = "콜드브루 스몰";
             this.btn_coldbrew_3.UseVisualStyleBackColor = false;
+            this.btn_coldbrew_3.Click += new System.EventHandler(this.btn_coldbrew_3_Click);
             // 
             // btn_coffee_capu
             // 
@@ -597,6 +599,7 @@
             this.btn_sm_taro.TabIndex = 284;
             this.btn_sm_taro.Text = "타로스무디 스몰";
             this.btn_sm_taro.UseVisualStyleBackColor = false;
+            this.btn_sm_taro.Click += new System.EventHandler(this.btn_sm_taro_Click);
             // 
             // btn_sm_mango
             // 
@@ -610,6 +613,7 @@
             this.btn_sm_mango.TabIndex = 285;
             this.btn_sm_mango.Text = "망고스무디 스몰";
             this.btn_sm_mango.UseVisualStyleBackColor = false;
+            this.btn_sm_mango.Click += new System.EventHandler(this.btn_sm_mango_Click);
             // 
             // button10
             // 
@@ -633,6 +637,7 @@
             this.btn_sm_choco.TabIndex = 286;
             this.btn_sm_choco.Text = "초콜렛 \r\n스무디 스몰";
             this.btn_sm_choco.UseVisualStyleBackColor = false;
+            this.btn_sm_choco.Click += new System.EventHandler(this.btn_sm_choco_Click);
             // 
             // button4
             // 
@@ -656,6 +661,7 @@
             this.btn_sm_moka.TabIndex = 287;
             this.btn_sm_moka.Text = "모카스무디 스몰";
             this.btn_sm_moka.UseVisualStyleBackColor = false;
+            this.btn_sm_moka.Click += new System.EventHandler(this.btn_sm_moka_Click);
             // 
             // button3
             // 

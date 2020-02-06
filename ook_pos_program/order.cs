@@ -12,7 +12,11 @@ namespace ook_pos_program
         public int order_id = 0;
         public Dictionary<string, int> information = new Dictionary<string, int>(); // 메뉴이름과 가격을 담음
 
+        public int button_click = 0; //주문 들어왔을때 뜨는 버튼을 눌렀는지 여부를 알려주는 변수
+
         public int HowManyInsert=0;
+
+        
 
         //콜드브루
         public int[] coldbrew_1 = new int[3] { 0, 0, 0 };
@@ -67,7 +71,35 @@ namespace ook_pos_program
 
         public order()
         {
+            //콜드브루
+            information.Add("콜드 폼 콜드브루 스몰", 4500);
+            information.Add("콜드 폼 콜드브루 미디움", 5000);
+            information.Add("콜드 폼 콜드브루 라지", 5500);
 
+            information.Add("바닐라크림 콜드브루 스몰", 5000);
+            information.Add("바닐라크림 콜드브루 미디움", 5500);
+            information.Add("바닐라크림 콜드브루 라지", 6000);
+
+            information.Add("콜드브루 스몰", 5500);
+            information.Add("콜드브루 미디움", 6000);
+            information.Add("콜드브루 라지", 6500);
+
+            //스무디
+            information.Add("타로스무디 스몰", 4300);
+            information.Add("타로스무디 미디움", 4800);
+            information.Add("타로스무디 라지", 5300);
+
+            information.Add("망고스무디 스몰", 4500);
+            information.Add("망고스무디 미디움", 5500);
+            information.Add("망고스무디 라지", 6000);
+
+            information.Add("초콜렛스무디 스몰", 4400);
+            information.Add("초콜렛스무디 미디움", 4900);
+            information.Add("초콜렛스무디 라지", 5400);
+
+            information.Add("모카스무디 스몰", 4600);
+            information.Add("모카스무디 미디움", 5100);
+            information.Add("모카스무디 라지", 5600);
         }
     }
 }

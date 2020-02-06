@@ -15,8 +15,8 @@ namespace ook_pos_program
 
     class adapter
     {
-        //string strconn = string.Format(@"server=mydb.cmkvwrcpwpyc.ap-northeast-2.rds.amazonaws.com;database=ook;user=admin;password=young1700!");
-        string strconn = string.Format(@"server=localhost;database=kiosk;user=root;password=1234");
+        string strconn = string.Format(@"server=mydb.cmkvwrcpwpyc.ap-northeast-2.rds.amazonaws.com;database=ook;user=admin;password=young1700!");
+        //string strconn = string.Format(@"server=localhost;database=kiosk;user=root;password=1234");
 
         public DataTable ConnectDB()
         {
