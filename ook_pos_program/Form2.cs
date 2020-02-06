@@ -23,27 +23,60 @@ namespace ook_pos_program
         public Form2()
         {
             InitializeComponent();
+            //panel1.SendToBack();
+            //panel2.BringToFront();
         }
 
         public Form2(string noLogin)
         {
             InitializeComponent();
+            panel2.SendToBack();
+            panel1.BringToFront();
             panel2.Visible = false;
             panel1.Visible = true;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        } //종료버튼
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        } //종료이미지
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            
+        } //판매관리 이미지
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Visible = false; //현재 폼 안보이게 하기
+            salesForm frm = new salesForm();
+            frm.Owner = this; //form1의 오너를 현재 폼으로
+            frm.Show(); //form1 보여주기
+        } //매출관리 버튼
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            this.Visible = false; //현재 폼 안보이게 하기
+            salesForm frm = new salesForm();
+            frm.Owner = this; //form1의 오너를 현재 폼으로
+            frm.Show(); //form1 보여주기
+        } //매출관리 이미지
+
+
+        private void button1_Click_1(object sender, EventArgs e)
         {
             this.Visible = false; //현재 폼 안보이게 하기
             Form1 frm = new Form1();
             frm.Owner = this; //form1의 오너를 현재 폼으로
             frm.Show(); //form1 보여주기
         } //판매관리 버튼
-
-        private void btn_0_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btn_1_Click(object sender, EventArgs e)
         {
@@ -126,6 +159,15 @@ namespace ook_pos_program
             sp.Play();
         }
 
+        private void btn_0_Click(object sender, EventArgs e)
+        {
+            textBox_pwd.Text += "*";
+            index++;
+            pwd += "0";
+            sp.SoundLocation = file;
+            sp.Play();
+        }
+
         private void btn_C_Click(object sender, EventArgs e)
         {
             textBox_pwd.Clear();
@@ -170,38 +212,20 @@ namespace ook_pos_program
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        } //종료버튼
-
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        } //종료이미지
-
-        private void pictureBox3_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             this.Visible = false; //현재 폼 안보이게 하기
             Form1 frm = new Form1();
             frm.Owner = this; //form1의 오너를 현재 폼으로
             frm.Show(); //form1 보여주기
-        } //판매관리 이미지
+        }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void pictureBox3_Click_1(object sender, EventArgs e)
         {
             this.Visible = false; //현재 폼 안보이게 하기
-            salesForm frm = new salesForm();
+            Form1 frm = new Form1();
             frm.Owner = this; //form1의 오너를 현재 폼으로
             frm.Show(); //form1 보여주기
-        } //매출관리 버튼
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-            this.Visible = false; //현재 폼 안보이게 하기
-            salesForm frm = new salesForm();
-            frm.Owner = this; //form1의 오너를 현재 폼으로
-            frm.Show(); //form1 보여주기
-        } //매출관리 이미지
+        }
     }
 }
