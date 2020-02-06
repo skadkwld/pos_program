@@ -16,7 +16,7 @@ using System.Data.SqlClient;
 
 namespace ook_pos_program
 {
-    public partial class saleForm1 : MetroFramework.Forms.MetroForm
+    public partial class saleForm1 : MetroForm
     {
         public saleForm1()
         {
