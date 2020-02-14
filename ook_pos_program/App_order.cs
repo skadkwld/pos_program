@@ -30,7 +30,7 @@ namespace ook_pos_program
 
         private void button1_Click(object sender, EventArgs e)
         {
-            confirm_order co = new confirm_order(newRow);
+            confirm_order co = new confirm_order();
             co.Show();
             MessageBox.Show(newRow.ToString());
             //co.dataGridView_input();

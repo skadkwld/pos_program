@@ -328,5 +328,10 @@ namespace ook_pos_program
             frm.Owner = this; //form2의 오너를 현재 폼으로
             frm.Show(); //form2 보여주기
         } //닫기 버튼
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -55,10 +55,7 @@ namespace ook_pos_program
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Visible = false; //현재 폼 안보이게 하기
-            salesForm frm = new salesForm();
-            frm.Owner = this; //form1의 오너를 현재 폼으로
-            frm.Show(); //form1 보여주기
+            
         } //매출관리 버튼
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -226,6 +223,38 @@ namespace ook_pos_program
             Form1 frm = new Form1();
             frm.Owner = this; //form1의 오너를 현재 폼으로
             frm.Show(); //form1 보여주기
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            this.Visible = false; //현재 폼 안보이게 하기
+            salesForm frm = new salesForm();
+            frm.Owner = this; //form1의 오너를 현재 폼으로
+            frm.Show(); //form1 보여주기
+        }
+
+        private void pictureBox4_Click_1(object sender, EventArgs e)
+        {
+            this.Visible = false; //현재 폼 안보이게 하기
+            salesForm frm = new salesForm();
+            frm.Owner = this; //form1의 오너를 현재 폼으로
+            frm.Show(); //form1 보여주기
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void pictureBox6_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button2_MouseMove(object sender, MouseEventArgs e)
+        {
+            //button1.BackColor = Color.Cyan;
+            //pictureBox3.BackColor = Color.Cyan;
         }
     }
 }

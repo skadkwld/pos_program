@@ -115,6 +115,12 @@
       <DependentUpon>IOS_Order.cs</DependentUpon>
     </Compile>
     <Compile Include="order.cs" />
+    <Compile Include="orderPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="orderPanel.Designer.cs">
+      <DependentUpon>orderPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="order_large.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -191,6 +197,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IOS_Order.resx">
       <DependentUpon>IOS_Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orderPanel.resx">
+      <DependentUpon>orderPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="order_large.resx">
       <DependentUpon>order_large.cs</DependentUpon>

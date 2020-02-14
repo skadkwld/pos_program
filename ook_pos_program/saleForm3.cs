@@ -102,5 +102,10 @@ namespace ook_pos_program
                 conn.Close();
             }
         }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -90,6 +90,7 @@ namespace ook_pos_program
 
             while (true)
             {
+                app_pos = "select confirmed from orderMenu where idorderMenu='#idorderMenu'";
                 conn.Open();
                 count1 = Convert.ToInt32(cmd.ExecuteScalar());
                 //MessageBox.Show(count1.ToString()); //디버깅용
@@ -97,8 +98,6 @@ namespace ook_pos_program
                 cmd_app_pos = new MySqlCommand(app_pos, conn);
                 app_or_pos =(string)cmd_app_pos.ExecuteScalar();
                 //infoQuery = infoQuery.Replace("#idorderMenu", count1.ToString());
-                IOS_Order goPanel = new IOS_Order();
-                App_order go_panel;
 
                 if (i == 0)
                 {
@@ -115,31 +114,24 @@ namespace ook_pos_program
                             row_number = Convert.ToInt32(cmd_newRow.ExecuteScalar());
                             this.Invoke(new Action(delegate ()
                             {
-                                if (order.button_click == 0)
+                                if (order.button_click == 0) //3개중 맨 아래의 팝업창
                                 {
-                                    //go_panel = new App_order(row_number);
-                                    //go_panel.Show();
                                     order.button_click++;
-                                    new_row = row_number;
-                                    sp.SoundLocation = file;
+                                    new_row = row_number; //전역변수 new_row에 쿼리문을 통해 얻은 변수값을 대입
+                                    sp.SoundLocation = file; 
                                     sp.Play();
                                     button8.Visible = true;
                                 }
-                                //MessageBox.Show(string.Format("앱에서 주문이 들어왔습니다."));
-                                else if(order.button_click == 1)
+                                else if(order.button_click == 1) //두번째 팝업창
                                 {
-                                    //go_panel = new App_order(row_number);
-                                    //go_panel.Show();
                                     order.button_click++;
                                     new_row = row_number;
                                     sp.SoundLocation = file;
                                     sp.Play();
                                     button18.Visible = true;
                                 }
-                                else if(order.button_click == 2)
+                                else if(order.button_click == 2) //세번째 팝업창
                                 {
-                                    //go_panel = new App_order(row_number);
-                                    //go_panel.Show();
                                     sp.SoundLocation = file;
                                     sp.Play();
                                     new_row = row_number;
@@ -409,11 +401,21 @@ namespace ook_pos_program
         public void comed_order()
         {
             order.button_click = 0;
-            button8.Visible = false;
-            button18.Visible = false;
-            button23.Visible = false;
+            button8.Visible = false; //주문이 들어왔습니다 버튼 안보이게 하기
+            button18.Visible = false; //주문이 들어왔습니다 버튼 안보이게 하기
+            button23.Visible = false; //주문이 들어왔습니다 버튼 안보이게 하기
 
-            confirm_order co = new confirm_order(new_row);
+            string[,] strData = new string[10, 5];
+
+            for (int i = 0; i < order.HowManyInsert; i++)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    strData[i, j] = dataGridView2.Rows[i].Cells[j].Value.ToString();
+                }
+            }
+
+            confirm_order co = new confirm_order(strData, order.HowManyInsert, order.price);
             co.Show();
             MessageBox.Show(new_row.ToString());
 
