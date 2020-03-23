@@ -78,11 +78,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="App_order.cs">
+    <Compile Include="panel_click.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="App_order.Designer.cs">
-      <DependentUpon>App_order.cs</DependentUpon>
+    <Compile Include="panel_click.Designer.cs">
+      <DependentUpon>panel_click.cs</DependentUpon>
     </Compile>
     <Compile Include="Form2-2.cs">
       <SubType>Form</SubType>
@@ -180,8 +180,8 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="App_order.resx">
-      <DependentUpon>App_order.cs</DependentUpon>
+    <EmbeddedResource Include="panel_click.resx">
+      <DependentUpon>panel_click.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2-2.resx">
       <DependentUpon>Form2-2.cs</DependentUpon>

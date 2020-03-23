@@ -29,73 +29,127 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(confirm_order));
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.printDialog1 = new System.Windows.Forms.PrintDialog();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button8 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label9_3_1 = new System.Windows.Forms.Label();
+            this.label9_8 = new System.Windows.Forms.Label();
+            this.button15 = new System.Windows.Forms.Button();
+            this.label9_7 = new System.Windows.Forms.Label();
+            this.label9_6 = new System.Windows.Forms.Label();
+            this.label9_5 = new System.Windows.Forms.Label();
+            this.label9_2 = new System.Windows.Forms.Label();
+            this.label9_4 = new System.Windows.Forms.Label();
+            this.label9_3 = new System.Windows.Forms.Label();
+            this.label9_1 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label8_3_1 = new System.Windows.Forms.Label();
+            this.label8_8 = new System.Windows.Forms.Label();
+            this.button14 = new System.Windows.Forms.Button();
+            this.label8_7 = new System.Windows.Forms.Label();
+            this.label8_6 = new System.Windows.Forms.Label();
+            this.label8_5 = new System.Windows.Forms.Label();
+            this.label8_2 = new System.Windows.Forms.Label();
+            this.label8_4 = new System.Windows.Forms.Label();
+            this.label8_3 = new System.Windows.Forms.Label();
+            this.label8_1 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.label7_3_1 = new System.Windows.Forms.Label();
+            this.label7_8 = new System.Windows.Forms.Label();
+            this.button13 = new System.Windows.Forms.Button();
+            this.label7_7 = new System.Windows.Forms.Label();
+            this.label7_6 = new System.Windows.Forms.Label();
+            this.label7_5 = new System.Windows.Forms.Label();
+            this.label7_2 = new System.Windows.Forms.Label();
+            this.label7_4 = new System.Windows.Forms.Label();
+            this.label7_3 = new System.Windows.Forms.Label();
+            this.label7_1 = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.label6_3_1 = new System.Windows.Forms.Label();
+            this.label6_8 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.label6_7 = new System.Windows.Forms.Label();
+            this.label6_6 = new System.Windows.Forms.Label();
+            this.label6_5 = new System.Windows.Forms.Label();
+            this.label6_2 = new System.Windows.Forms.Label();
+            this.label6_4 = new System.Windows.Forms.Label();
+            this.label6_3 = new System.Windows.Forms.Label();
+            this.label6_1 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.label5_3_1 = new System.Windows.Forms.Label();
+            this.label5_8 = new System.Windows.Forms.Label();
+            this.button11 = new System.Windows.Forms.Button();
+            this.label5_7 = new System.Windows.Forms.Label();
+            this.label5_6 = new System.Windows.Forms.Label();
+            this.label5_5 = new System.Windows.Forms.Label();
+            this.label5_2 = new System.Windows.Forms.Label();
+            this.label5_4 = new System.Windows.Forms.Label();
+            this.label5_3 = new System.Windows.Forms.Label();
+            this.label5_1 = new System.Windows.Forms.Label();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.label4_3_1 = new System.Windows.Forms.Label();
+            this.label4_8 = new System.Windows.Forms.Label();
+            this.button10 = new System.Windows.Forms.Button();
+            this.label4_7 = new System.Windows.Forms.Label();
+            this.label4_6 = new System.Windows.Forms.Label();
+            this.label4_5 = new System.Windows.Forms.Label();
+            this.label4_2 = new System.Windows.Forms.Label();
+            this.label4_4 = new System.Windows.Forms.Label();
+            this.label4_3 = new System.Windows.Forms.Label();
+            this.label4_1 = new System.Windows.Forms.Label();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.label3_3_1 = new System.Windows.Forms.Label();
+            this.label3_8 = new System.Windows.Forms.Label();
+            this.button9 = new System.Windows.Forms.Button();
+            this.label3_7 = new System.Windows.Forms.Label();
+            this.label3_6 = new System.Windows.Forms.Label();
+            this.label3_5 = new System.Windows.Forms.Label();
+            this.label3_2 = new System.Windows.Forms.Label();
+            this.label3_4 = new System.Windows.Forms.Label();
+            this.label3_3 = new System.Windows.Forms.Label();
+            this.label3_1 = new System.Windows.Forms.Label();
+            this.panel5_1 = new System.Windows.Forms.Panel();
+            this.label2_3_1 = new System.Windows.Forms.Label();
+            this.label2_8 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.label2_7 = new System.Windows.Forms.Label();
+            this.label2_6 = new System.Windows.Forms.Label();
+            this.label2_5 = new System.Windows.Forms.Label();
+            this.label2_2 = new System.Windows.Forms.Label();
+            this.label2_4 = new System.Windows.Forms.Label();
+            this.label2_3 = new System.Windows.Forms.Label();
+            this.label2_1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label1_3_1 = new System.Windows.Forms.Label();
+            this.label1_8 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.label1_7 = new System.Windows.Forms.Label();
+            this.label1_6 = new System.Windows.Forms.Label();
+            this.label1_5 = new System.Windows.Forms.Label();
             this.label1_2 = new System.Windows.Forms.Label();
             this.label1_4 = new System.Windows.Forms.Label();
             this.label1_3 = new System.Windows.Forms.Label();
             this.label1_1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
-            this.printDialog1 = new System.Windows.Forms.PrintDialog();
-            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.Panel2.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
+            this.panel100 = new System.Windows.Forms.Panel();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -103,517 +157,1261 @@
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel12.SuspendLayout();
-            this.panel5.SuspendLayout();
+            this.panel5_1.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.panel100.SuspendLayout();
             this.SuspendLayout();
             // 
-            // splitContainer1
+            // printDocument1
             // 
-            this.splitContainer1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 142);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.splitContainer1.Name = "splitContainer1";
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
-            // splitContainer1.Panel1
+            // printDialog1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.panel3);
-            this.splitContainer1.Panel1.Controls.Add(this.dataGridView1);
+            this.printDialog1.UseEXDialog = true;
             // 
-            // splitContainer1.Panel2
+            // printPreviewDialog1
             // 
-            this.splitContainer1.Panel2.BackColor = System.Drawing.SystemColors.Control;
-            this.splitContainer1.Panel2.Controls.Add(this.button8);
-            this.splitContainer1.Panel2.Controls.Add(this.button7);
-            this.splitContainer1.Panel2.Controls.Add(this.button6);
-            this.splitContainer1.Size = new System.Drawing.Size(859, 329);
-            this.splitContainer1.SplitterDistance = 717;
-            this.splitContainer1.TabIndex = 8;
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            // 
+            // panel2
+            // 
+            this.panel2.AutoScroll = true;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 71);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(620, 433);
+            this.panel2.TabIndex = 7;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("AlternateGothic2 BT", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.label1.Location = new System.Drawing.Point(12, 17);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(76, 28);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "ook pos";
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.Location = new System.Drawing.Point(452, 21);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(45, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "-";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button2.Location = new System.Drawing.Point(503, 21);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(45, 23);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "ㅁ";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button3.Location = new System.Drawing.Point(554, 21);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(45, 23);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "x";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.DimGray;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button6.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button6.Location = new System.Drawing.Point(271, 10);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(99, 45);
+            this.button6.TabIndex = 0;
+            this.button6.Text = "주문표 인쇄";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Visible = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(226, 26);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 27;
+            this.dataGridView1.Size = new System.Drawing.Size(39, 22);
+            this.dataGridView1.TabIndex = 8;
+            this.dataGridView1.Visible = false;
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.DimGray;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button8.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button8.Location = new System.Drawing.Point(127, 13);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(93, 44);
+            this.button8.TabIndex = 2;
+            this.button8.Text = "주문접수";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Visible = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.button8.MouseLeave += new System.EventHandler(this.button8_MouseLeave);
+            this.button8.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button8_MouseMove);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.button8);
+            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.button6);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(620, 71);
+            this.panel1.TabIndex = 6;
             // 
             // panel3
             // 
-            this.panel3.AutoScroll = true;
-            this.panel3.Controls.Add(this.panel7);
-            this.panel3.Controls.Add(this.panel6);
-            this.panel3.Controls.Add(this.panel8);
-            this.panel3.Controls.Add(this.panel9);
-            this.panel3.Controls.Add(this.panel10);
-            this.panel3.Controls.Add(this.panel11);
-            this.panel3.Controls.Add(this.panel12);
             this.panel3.Controls.Add(this.panel5);
-            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Controls.Add(this.panel100);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 324);
+            this.panel3.Location = new System.Drawing.Point(0, 71);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(717, 5);
-            this.panel3.TabIndex = 1;
+            this.panel3.Size = new System.Drawing.Size(620, 433);
+            this.panel3.TabIndex = 8;
+            // 
+            // panel5
+            // 
+            this.panel5.AutoScroll = true;
+            this.panel5.Controls.Add(this.panel7);
+            this.panel5.Controls.Add(this.panel6);
+            this.panel5.Controls.Add(this.panel8);
+            this.panel5.Controls.Add(this.panel9);
+            this.panel5.Controls.Add(this.panel10);
+            this.panel5.Controls.Add(this.panel11);
+            this.panel5.Controls.Add(this.panel12);
+            this.panel5.Controls.Add(this.panel5_1);
+            this.panel5.Controls.Add(this.panel4);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(0, 70);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(620, 363);
+            this.panel5.TabIndex = 1;
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Controls.Add(this.label21);
-            this.panel7.Controls.Add(this.label22);
-            this.panel7.Controls.Add(this.label23);
-            this.panel7.Controls.Add(this.label24);
+            this.panel7.Controls.Add(this.label9_3_1);
+            this.panel7.Controls.Add(this.label9_8);
+            this.panel7.Controls.Add(this.button15);
+            this.panel7.Controls.Add(this.label9_7);
+            this.panel7.Controls.Add(this.label9_6);
+            this.panel7.Controls.Add(this.label9_5);
+            this.panel7.Controls.Add(this.label9_2);
+            this.panel7.Controls.Add(this.label9_4);
+            this.panel7.Controls.Add(this.label9_3);
+            this.panel7.Controls.Add(this.label9_1);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 800);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(696, 100);
-            this.panel7.TabIndex = 16;
+            this.panel7.Size = new System.Drawing.Size(599, 100);
+            this.panel7.TabIndex = 43;
             this.panel7.Visible = false;
+            this.panel7.Click += new System.EventHandler(this.panel7_Click);
             // 
-            // label21
+            // label9_3_1
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label21.Location = new System.Drawing.Point(13, 44);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(49, 19);
-            this.label21.TabIndex = 7;
-            this.label21.Text = "17:18";
+            this.label9_3_1.AutoSize = true;
+            this.label9_3_1.BackColor = System.Drawing.Color.Black;
+            this.label9_3_1.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label9_3_1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label9_3_1.Location = new System.Drawing.Point(28, 73);
+            this.label9_3_1.Name = "label9_3_1";
+            this.label9_3_1.Size = new System.Drawing.Size(51, 19);
+            this.label9_3_1.TabIndex = 17;
+            this.label9_3_1.Text = "준비중";
+            this.label9_3_1.Visible = false;
             // 
-            // label22
+            // label9_8
             // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label22.Location = new System.Drawing.Point(219, 46);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(141, 19);
-            this.label22.TabIndex = 6;
-            this.label22.Text = "[메뉴 2개] 10000원";
+            this.label9_8.AutoSize = true;
+            this.label9_8.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label9_8.Location = new System.Drawing.Point(424, 67);
+            this.label9_8.Name = "label9_8";
+            this.label9_8.Size = new System.Drawing.Size(18, 19);
+            this.label9_8.TabIndex = 16;
+            this.label9_8.Text = "-";
+            this.label9_8.Visible = false;
             // 
-            // label23
+            // button15
             // 
-            this.label23.AutoSize = true;
-            this.label23.BackColor = System.Drawing.Color.Black;
-            this.label23.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label23.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label23.Location = new System.Drawing.Point(28, 73);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(65, 19);
-            this.label23.TabIndex = 5;
-            this.label23.Text = "접수대기";
+            this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button15.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button15.Location = new System.Drawing.Point(507, 15);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(69, 71);
+            this.button15.TabIndex = 15;
+            this.button15.Text = "주문표 인쇄";
+            this.button15.UseVisualStyleBackColor = false;
             // 
-            // label24
+            // label9_7
             // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label24.Location = new System.Drawing.Point(14, 15);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(109, 19);
-            this.label24.TabIndex = 4;
-            this.label24.Text = "02월 06일 (목)";
+            this.label9_7.AutoSize = true;
+            this.label9_7.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label9_7.Location = new System.Drawing.Point(424, 51);
+            this.label9_7.Name = "label9_7";
+            this.label9_7.Size = new System.Drawing.Size(18, 19);
+            this.label9_7.TabIndex = 14;
+            this.label9_7.Text = "-";
+            this.label9_7.Visible = false;
+            // 
+            // label9_6
+            // 
+            this.label9_6.AutoSize = true;
+            this.label9_6.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label9_6.Location = new System.Drawing.Point(424, 32);
+            this.label9_6.Name = "label9_6";
+            this.label9_6.Size = new System.Drawing.Size(18, 19);
+            this.label9_6.TabIndex = 13;
+            this.label9_6.Text = "-";
+            this.label9_6.Visible = false;
+            // 
+            // label9_5
+            // 
+            this.label9_5.AutoSize = true;
+            this.label9_5.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label9_5.Location = new System.Drawing.Point(424, 11);
+            this.label9_5.Name = "label9_5";
+            this.label9_5.Size = new System.Drawing.Size(18, 19);
+            this.label9_5.TabIndex = 12;
+            this.label9_5.Text = "-";
+            this.label9_5.Visible = false;
+            // 
+            // label9_2
+            // 
+            this.label9_2.AutoSize = true;
+            this.label9_2.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label9_2.Location = new System.Drawing.Point(13, 44);
+            this.label9_2.Name = "label9_2";
+            this.label9_2.Size = new System.Drawing.Size(49, 19);
+            this.label9_2.TabIndex = 7;
+            this.label9_2.Text = "17:18";
+            // 
+            // label9_4
+            // 
+            this.label9_4.AutoSize = true;
+            this.label9_4.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label9_4.Location = new System.Drawing.Point(219, 46);
+            this.label9_4.Name = "label9_4";
+            this.label9_4.Size = new System.Drawing.Size(141, 19);
+            this.label9_4.TabIndex = 6;
+            this.label9_4.Text = "[메뉴 2개] 10000원";
+            // 
+            // label9_3
+            // 
+            this.label9_3.AutoSize = true;
+            this.label9_3.BackColor = System.Drawing.Color.Black;
+            this.label9_3.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label9_3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label9_3.Location = new System.Drawing.Point(28, 73);
+            this.label9_3.Name = "label9_3";
+            this.label9_3.Size = new System.Drawing.Size(65, 19);
+            this.label9_3.TabIndex = 5;
+            this.label9_3.Text = "접수대기";
+            // 
+            // label9_1
+            // 
+            this.label9_1.AutoSize = true;
+            this.label9_1.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label9_1.Location = new System.Drawing.Point(14, 15);
+            this.label9_1.Name = "label9_1";
+            this.label9_1.Size = new System.Drawing.Size(109, 19);
+            this.label9_1.TabIndex = 4;
+            this.label9_1.Text = "02월 06일 (목)";
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.label17);
-            this.panel6.Controls.Add(this.label18);
-            this.panel6.Controls.Add(this.label19);
-            this.panel6.Controls.Add(this.label20);
+            this.panel6.Controls.Add(this.label8_3_1);
+            this.panel6.Controls.Add(this.label8_8);
+            this.panel6.Controls.Add(this.button14);
+            this.panel6.Controls.Add(this.label8_7);
+            this.panel6.Controls.Add(this.label8_6);
+            this.panel6.Controls.Add(this.label8_5);
+            this.panel6.Controls.Add(this.label8_2);
+            this.panel6.Controls.Add(this.label8_4);
+            this.panel6.Controls.Add(this.label8_3);
+            this.panel6.Controls.Add(this.label8_1);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 700);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(696, 100);
-            this.panel6.TabIndex = 15;
+            this.panel6.Size = new System.Drawing.Size(599, 100);
+            this.panel6.TabIndex = 42;
             this.panel6.Visible = false;
+            this.panel6.Click += new System.EventHandler(this.panel6_Click);
             // 
-            // label17
+            // label8_3_1
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label17.Location = new System.Drawing.Point(13, 44);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(49, 19);
-            this.label17.TabIndex = 7;
-            this.label17.Text = "17:18";
+            this.label8_3_1.AutoSize = true;
+            this.label8_3_1.BackColor = System.Drawing.Color.Black;
+            this.label8_3_1.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label8_3_1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label8_3_1.Location = new System.Drawing.Point(28, 73);
+            this.label8_3_1.Name = "label8_3_1";
+            this.label8_3_1.Size = new System.Drawing.Size(51, 19);
+            this.label8_3_1.TabIndex = 17;
+            this.label8_3_1.Text = "준비중";
+            this.label8_3_1.Visible = false;
             // 
-            // label18
+            // label8_8
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label18.Location = new System.Drawing.Point(219, 46);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(141, 19);
-            this.label18.TabIndex = 6;
-            this.label18.Text = "[메뉴 2개] 10000원";
+            this.label8_8.AutoSize = true;
+            this.label8_8.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label8_8.Location = new System.Drawing.Point(424, 73);
+            this.label8_8.Name = "label8_8";
+            this.label8_8.Size = new System.Drawing.Size(18, 19);
+            this.label8_8.TabIndex = 16;
+            this.label8_8.Text = "-";
+            this.label8_8.Visible = false;
             // 
-            // label19
+            // button14
             // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.Black;
-            this.label19.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label19.Location = new System.Drawing.Point(28, 73);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(65, 19);
-            this.label19.TabIndex = 5;
-            this.label19.Text = "접수대기";
+            this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button14.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button14.Location = new System.Drawing.Point(507, 15);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(69, 71);
+            this.button14.TabIndex = 15;
+            this.button14.Text = "주문표 인쇄";
+            this.button14.UseVisualStyleBackColor = false;
             // 
-            // label20
+            // label8_7
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label20.Location = new System.Drawing.Point(14, 15);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(109, 19);
-            this.label20.TabIndex = 4;
-            this.label20.Text = "02월 06일 (목)";
+            this.label8_7.AutoSize = true;
+            this.label8_7.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label8_7.Location = new System.Drawing.Point(424, 55);
+            this.label8_7.Name = "label8_7";
+            this.label8_7.Size = new System.Drawing.Size(18, 19);
+            this.label8_7.TabIndex = 14;
+            this.label8_7.Text = "-";
+            this.label8_7.Visible = false;
+            // 
+            // label8_6
+            // 
+            this.label8_6.AutoSize = true;
+            this.label8_6.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label8_6.Location = new System.Drawing.Point(424, 36);
+            this.label8_6.Name = "label8_6";
+            this.label8_6.Size = new System.Drawing.Size(18, 19);
+            this.label8_6.TabIndex = 13;
+            this.label8_6.Text = "-";
+            this.label8_6.Visible = false;
+            // 
+            // label8_5
+            // 
+            this.label8_5.AutoSize = true;
+            this.label8_5.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label8_5.Location = new System.Drawing.Point(424, 15);
+            this.label8_5.Name = "label8_5";
+            this.label8_5.Size = new System.Drawing.Size(18, 19);
+            this.label8_5.TabIndex = 12;
+            this.label8_5.Text = "-";
+            this.label8_5.Visible = false;
+            // 
+            // label8_2
+            // 
+            this.label8_2.AutoSize = true;
+            this.label8_2.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label8_2.Location = new System.Drawing.Point(13, 44);
+            this.label8_2.Name = "label8_2";
+            this.label8_2.Size = new System.Drawing.Size(49, 19);
+            this.label8_2.TabIndex = 7;
+            this.label8_2.Text = "17:18";
+            // 
+            // label8_4
+            // 
+            this.label8_4.AutoSize = true;
+            this.label8_4.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label8_4.Location = new System.Drawing.Point(219, 46);
+            this.label8_4.Name = "label8_4";
+            this.label8_4.Size = new System.Drawing.Size(141, 19);
+            this.label8_4.TabIndex = 6;
+            this.label8_4.Text = "[메뉴 2개] 10000원";
+            // 
+            // label8_3
+            // 
+            this.label8_3.AutoSize = true;
+            this.label8_3.BackColor = System.Drawing.Color.Black;
+            this.label8_3.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label8_3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label8_3.Location = new System.Drawing.Point(28, 73);
+            this.label8_3.Name = "label8_3";
+            this.label8_3.Size = new System.Drawing.Size(65, 19);
+            this.label8_3.TabIndex = 5;
+            this.label8_3.Text = "접수대기";
+            // 
+            // label8_1
+            // 
+            this.label8_1.AutoSize = true;
+            this.label8_1.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label8_1.Location = new System.Drawing.Point(14, 15);
+            this.label8_1.Name = "label8_1";
+            this.label8_1.Size = new System.Drawing.Size(109, 19);
+            this.label8_1.TabIndex = 4;
+            this.label8_1.Text = "02월 06일 (목)";
             // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel8.Controls.Add(this.label13);
-            this.panel8.Controls.Add(this.label14);
-            this.panel8.Controls.Add(this.label15);
-            this.panel8.Controls.Add(this.label16);
+            this.panel8.Controls.Add(this.label7_3_1);
+            this.panel8.Controls.Add(this.label7_8);
+            this.panel8.Controls.Add(this.button13);
+            this.panel8.Controls.Add(this.label7_7);
+            this.panel8.Controls.Add(this.label7_6);
+            this.panel8.Controls.Add(this.label7_5);
+            this.panel8.Controls.Add(this.label7_2);
+            this.panel8.Controls.Add(this.label7_4);
+            this.panel8.Controls.Add(this.label7_3);
+            this.panel8.Controls.Add(this.label7_1);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(0, 600);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(696, 100);
-            this.panel8.TabIndex = 14;
+            this.panel8.Size = new System.Drawing.Size(599, 100);
+            this.panel8.TabIndex = 41;
             this.panel8.Visible = false;
+            this.panel8.Click += new System.EventHandler(this.panel8_Click);
             // 
-            // label13
+            // label7_3_1
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label13.Location = new System.Drawing.Point(13, 44);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(49, 19);
-            this.label13.TabIndex = 7;
-            this.label13.Text = "17:18";
+            this.label7_3_1.AutoSize = true;
+            this.label7_3_1.BackColor = System.Drawing.Color.Black;
+            this.label7_3_1.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label7_3_1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label7_3_1.Location = new System.Drawing.Point(28, 73);
+            this.label7_3_1.Name = "label7_3_1";
+            this.label7_3_1.Size = new System.Drawing.Size(51, 19);
+            this.label7_3_1.TabIndex = 17;
+            this.label7_3_1.Text = "준비중";
+            this.label7_3_1.Visible = false;
             // 
-            // label14
+            // label7_8
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label14.Location = new System.Drawing.Point(219, 46);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(141, 19);
-            this.label14.TabIndex = 6;
-            this.label14.Text = "[메뉴 2개] 10000원";
+            this.label7_8.AutoSize = true;
+            this.label7_8.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label7_8.Location = new System.Drawing.Point(424, 67);
+            this.label7_8.Name = "label7_8";
+            this.label7_8.Size = new System.Drawing.Size(18, 19);
+            this.label7_8.TabIndex = 16;
+            this.label7_8.Text = "-";
+            this.label7_8.Visible = false;
             // 
-            // label15
+            // button13
             // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Black;
-            this.label15.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label15.Location = new System.Drawing.Point(28, 73);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(65, 19);
-            this.label15.TabIndex = 5;
-            this.label15.Text = "접수대기";
+            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button13.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button13.Location = new System.Drawing.Point(507, 15);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(69, 71);
+            this.button13.TabIndex = 15;
+            this.button13.Text = "주문표 인쇄";
+            this.button13.UseVisualStyleBackColor = false;
             // 
-            // label16
+            // label7_7
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label16.Location = new System.Drawing.Point(14, 15);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(109, 19);
-            this.label16.TabIndex = 4;
-            this.label16.Text = "02월 06일 (목)";
+            this.label7_7.AutoSize = true;
+            this.label7_7.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label7_7.Location = new System.Drawing.Point(424, 51);
+            this.label7_7.Name = "label7_7";
+            this.label7_7.Size = new System.Drawing.Size(18, 19);
+            this.label7_7.TabIndex = 14;
+            this.label7_7.Text = "-";
+            this.label7_7.Visible = false;
+            // 
+            // label7_6
+            // 
+            this.label7_6.AutoSize = true;
+            this.label7_6.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label7_6.Location = new System.Drawing.Point(424, 32);
+            this.label7_6.Name = "label7_6";
+            this.label7_6.Size = new System.Drawing.Size(18, 19);
+            this.label7_6.TabIndex = 13;
+            this.label7_6.Text = "-";
+            this.label7_6.Visible = false;
+            // 
+            // label7_5
+            // 
+            this.label7_5.AutoSize = true;
+            this.label7_5.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label7_5.Location = new System.Drawing.Point(424, 11);
+            this.label7_5.Name = "label7_5";
+            this.label7_5.Size = new System.Drawing.Size(18, 19);
+            this.label7_5.TabIndex = 12;
+            this.label7_5.Text = "-";
+            this.label7_5.Visible = false;
+            // 
+            // label7_2
+            // 
+            this.label7_2.AutoSize = true;
+            this.label7_2.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label7_2.Location = new System.Drawing.Point(13, 44);
+            this.label7_2.Name = "label7_2";
+            this.label7_2.Size = new System.Drawing.Size(49, 19);
+            this.label7_2.TabIndex = 7;
+            this.label7_2.Text = "17:18";
+            // 
+            // label7_4
+            // 
+            this.label7_4.AutoSize = true;
+            this.label7_4.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label7_4.Location = new System.Drawing.Point(219, 46);
+            this.label7_4.Name = "label7_4";
+            this.label7_4.Size = new System.Drawing.Size(141, 19);
+            this.label7_4.TabIndex = 6;
+            this.label7_4.Text = "[메뉴 2개] 10000원";
+            // 
+            // label7_3
+            // 
+            this.label7_3.AutoSize = true;
+            this.label7_3.BackColor = System.Drawing.Color.Black;
+            this.label7_3.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label7_3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label7_3.Location = new System.Drawing.Point(28, 73);
+            this.label7_3.Name = "label7_3";
+            this.label7_3.Size = new System.Drawing.Size(65, 19);
+            this.label7_3.TabIndex = 5;
+            this.label7_3.Text = "접수대기";
+            // 
+            // label7_1
+            // 
+            this.label7_1.AutoSize = true;
+            this.label7_1.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label7_1.Location = new System.Drawing.Point(14, 15);
+            this.label7_1.Name = "label7_1";
+            this.label7_1.Size = new System.Drawing.Size(109, 19);
+            this.label7_1.TabIndex = 4;
+            this.label7_1.Text = "02월 06일 (목)";
             // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel9.Controls.Add(this.label6);
-            this.panel9.Controls.Add(this.label7);
-            this.panel9.Controls.Add(this.label8);
-            this.panel9.Controls.Add(this.label9);
+            this.panel9.Controls.Add(this.label6_3_1);
+            this.panel9.Controls.Add(this.label6_8);
+            this.panel9.Controls.Add(this.button7);
+            this.panel9.Controls.Add(this.button12);
+            this.panel9.Controls.Add(this.label6_7);
+            this.panel9.Controls.Add(this.label6_6);
+            this.panel9.Controls.Add(this.label6_5);
+            this.panel9.Controls.Add(this.label6_2);
+            this.panel9.Controls.Add(this.label6_4);
+            this.panel9.Controls.Add(this.label6_3);
+            this.panel9.Controls.Add(this.label6_1);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel9.Location = new System.Drawing.Point(0, 500);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(696, 100);
-            this.panel9.TabIndex = 13;
+            this.panel9.Size = new System.Drawing.Size(599, 100);
+            this.panel9.TabIndex = 40;
             this.panel9.Visible = false;
+            this.panel9.Click += new System.EventHandler(this.panel9_Click);
             // 
-            // label6
+            // label6_3_1
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label6.Location = new System.Drawing.Point(13, 44);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(49, 19);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "17:18";
+            this.label6_3_1.AutoSize = true;
+            this.label6_3_1.BackColor = System.Drawing.Color.Black;
+            this.label6_3_1.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label6_3_1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6_3_1.Location = new System.Drawing.Point(28, 73);
+            this.label6_3_1.Name = "label6_3_1";
+            this.label6_3_1.Size = new System.Drawing.Size(51, 19);
+            this.label6_3_1.TabIndex = 17;
+            this.label6_3_1.Text = "준비중";
+            this.label6_3_1.Visible = false;
             // 
-            // label7
+            // label6_8
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label7.Location = new System.Drawing.Point(219, 46);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(141, 19);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "[메뉴 2개] 10000원";
+            this.label6_8.AutoSize = true;
+            this.label6_8.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label6_8.Location = new System.Drawing.Point(424, 74);
+            this.label6_8.Name = "label6_8";
+            this.label6_8.Size = new System.Drawing.Size(18, 19);
+            this.label6_8.TabIndex = 16;
+            this.label6_8.Text = "-";
+            this.label6_8.Visible = false;
             // 
-            // label8
+            // button7
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Black;
-            this.label8.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(28, 73);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(65, 19);
-            this.label8.TabIndex = 5;
-            this.label8.Text = "접수대기";
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button7.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button7.Location = new System.Drawing.Point(507, 15);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(69, 71);
+            this.button7.TabIndex = 15;
+            this.button7.Text = "주문표 인쇄";
+            this.button7.UseVisualStyleBackColor = false;
             // 
-            // label9
+            // button12
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label9.Location = new System.Drawing.Point(14, 15);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(109, 19);
-            this.label9.TabIndex = 4;
-            this.label9.Text = "02월 06일 (목)";
+            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button12.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button12.Location = new System.Drawing.Point(667, 15);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(69, 71);
+            this.button12.TabIndex = 15;
+            this.button12.Text = "주문표 인쇄";
+            this.button12.UseVisualStyleBackColor = false;
+            // 
+            // label6_7
+            // 
+            this.label6_7.AutoSize = true;
+            this.label6_7.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label6_7.Location = new System.Drawing.Point(424, 60);
+            this.label6_7.Name = "label6_7";
+            this.label6_7.Size = new System.Drawing.Size(18, 19);
+            this.label6_7.TabIndex = 14;
+            this.label6_7.Text = "-";
+            this.label6_7.Visible = false;
+            // 
+            // label6_6
+            // 
+            this.label6_6.AutoSize = true;
+            this.label6_6.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label6_6.Location = new System.Drawing.Point(424, 41);
+            this.label6_6.Name = "label6_6";
+            this.label6_6.Size = new System.Drawing.Size(18, 19);
+            this.label6_6.TabIndex = 13;
+            this.label6_6.Text = "-";
+            this.label6_6.Visible = false;
+            // 
+            // label6_5
+            // 
+            this.label6_5.AutoSize = true;
+            this.label6_5.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label6_5.Location = new System.Drawing.Point(424, 20);
+            this.label6_5.Name = "label6_5";
+            this.label6_5.Size = new System.Drawing.Size(18, 19);
+            this.label6_5.TabIndex = 12;
+            this.label6_5.Text = "-";
+            this.label6_5.Visible = false;
+            // 
+            // label6_2
+            // 
+            this.label6_2.AutoSize = true;
+            this.label6_2.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label6_2.Location = new System.Drawing.Point(13, 44);
+            this.label6_2.Name = "label6_2";
+            this.label6_2.Size = new System.Drawing.Size(49, 19);
+            this.label6_2.TabIndex = 7;
+            this.label6_2.Text = "17:18";
+            // 
+            // label6_4
+            // 
+            this.label6_4.AutoSize = true;
+            this.label6_4.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label6_4.Location = new System.Drawing.Point(219, 46);
+            this.label6_4.Name = "label6_4";
+            this.label6_4.Size = new System.Drawing.Size(141, 19);
+            this.label6_4.TabIndex = 6;
+            this.label6_4.Text = "[메뉴 2개] 10000원";
+            // 
+            // label6_3
+            // 
+            this.label6_3.AutoSize = true;
+            this.label6_3.BackColor = System.Drawing.Color.Black;
+            this.label6_3.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label6_3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6_3.Location = new System.Drawing.Point(28, 73);
+            this.label6_3.Name = "label6_3";
+            this.label6_3.Size = new System.Drawing.Size(65, 19);
+            this.label6_3.TabIndex = 5;
+            this.label6_3.Text = "접수대기";
+            // 
+            // label6_1
+            // 
+            this.label6_1.AutoSize = true;
+            this.label6_1.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label6_1.Location = new System.Drawing.Point(14, 15);
+            this.label6_1.Name = "label6_1";
+            this.label6_1.Size = new System.Drawing.Size(109, 19);
+            this.label6_1.TabIndex = 4;
+            this.label6_1.Text = "02월 06일 (목)";
             // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel10.Controls.Add(this.label10);
-            this.panel10.Controls.Add(this.label11);
-            this.panel10.Controls.Add(this.label12);
-            this.panel10.Controls.Add(this.label25);
+            this.panel10.Controls.Add(this.label5_3_1);
+            this.panel10.Controls.Add(this.label5_8);
+            this.panel10.Controls.Add(this.button11);
+            this.panel10.Controls.Add(this.label5_7);
+            this.panel10.Controls.Add(this.label5_6);
+            this.panel10.Controls.Add(this.label5_5);
+            this.panel10.Controls.Add(this.label5_2);
+            this.panel10.Controls.Add(this.label5_4);
+            this.panel10.Controls.Add(this.label5_3);
+            this.panel10.Controls.Add(this.label5_1);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 400);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(696, 100);
-            this.panel10.TabIndex = 12;
+            this.panel10.Size = new System.Drawing.Size(599, 100);
+            this.panel10.TabIndex = 39;
             this.panel10.Visible = false;
+            this.panel10.Click += new System.EventHandler(this.panel10_Click);
             // 
-            // label10
+            // label5_3_1
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label10.Location = new System.Drawing.Point(13, 44);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(49, 19);
-            this.label10.TabIndex = 7;
-            this.label10.Text = "17:18";
+            this.label5_3_1.AutoSize = true;
+            this.label5_3_1.BackColor = System.Drawing.Color.Black;
+            this.label5_3_1.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label5_3_1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5_3_1.Location = new System.Drawing.Point(28, 73);
+            this.label5_3_1.Name = "label5_3_1";
+            this.label5_3_1.Size = new System.Drawing.Size(51, 19);
+            this.label5_3_1.TabIndex = 17;
+            this.label5_3_1.Text = "준비중";
+            this.label5_3_1.Visible = false;
             // 
-            // label11
+            // label5_8
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label11.Location = new System.Drawing.Point(219, 46);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(141, 19);
-            this.label11.TabIndex = 6;
-            this.label11.Text = "[메뉴 2개] 10000원";
+            this.label5_8.AutoSize = true;
+            this.label5_8.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label5_8.Location = new System.Drawing.Point(424, 73);
+            this.label5_8.Name = "label5_8";
+            this.label5_8.Size = new System.Drawing.Size(18, 19);
+            this.label5_8.TabIndex = 16;
+            this.label5_8.Text = "-";
+            this.label5_8.Visible = false;
             // 
-            // label12
+            // button11
             // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Black;
-            this.label12.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label12.Location = new System.Drawing.Point(28, 73);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(65, 19);
-            this.label12.TabIndex = 5;
-            this.label12.Text = "접수대기";
+            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button11.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button11.Location = new System.Drawing.Point(507, 15);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(69, 71);
+            this.button11.TabIndex = 15;
+            this.button11.Text = "주문표 인쇄";
+            this.button11.UseVisualStyleBackColor = false;
             // 
-            // label25
+            // label5_7
             // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label25.Location = new System.Drawing.Point(14, 15);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(109, 19);
-            this.label25.TabIndex = 4;
-            this.label25.Text = "02월 06일 (목)";
+            this.label5_7.AutoSize = true;
+            this.label5_7.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label5_7.Location = new System.Drawing.Point(424, 61);
+            this.label5_7.Name = "label5_7";
+            this.label5_7.Size = new System.Drawing.Size(18, 19);
+            this.label5_7.TabIndex = 14;
+            this.label5_7.Text = "-";
+            this.label5_7.Visible = false;
+            // 
+            // label5_6
+            // 
+            this.label5_6.AutoSize = true;
+            this.label5_6.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label5_6.Location = new System.Drawing.Point(424, 42);
+            this.label5_6.Name = "label5_6";
+            this.label5_6.Size = new System.Drawing.Size(18, 19);
+            this.label5_6.TabIndex = 13;
+            this.label5_6.Text = "-";
+            this.label5_6.Visible = false;
+            // 
+            // label5_5
+            // 
+            this.label5_5.AutoSize = true;
+            this.label5_5.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label5_5.Location = new System.Drawing.Point(424, 21);
+            this.label5_5.Name = "label5_5";
+            this.label5_5.Size = new System.Drawing.Size(18, 19);
+            this.label5_5.TabIndex = 12;
+            this.label5_5.Text = "-";
+            this.label5_5.Visible = false;
+            // 
+            // label5_2
+            // 
+            this.label5_2.AutoSize = true;
+            this.label5_2.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label5_2.Location = new System.Drawing.Point(13, 44);
+            this.label5_2.Name = "label5_2";
+            this.label5_2.Size = new System.Drawing.Size(49, 19);
+            this.label5_2.TabIndex = 7;
+            this.label5_2.Text = "17:18";
+            // 
+            // label5_4
+            // 
+            this.label5_4.AutoSize = true;
+            this.label5_4.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label5_4.Location = new System.Drawing.Point(219, 46);
+            this.label5_4.Name = "label5_4";
+            this.label5_4.Size = new System.Drawing.Size(141, 19);
+            this.label5_4.TabIndex = 6;
+            this.label5_4.Text = "[메뉴 2개] 10000원";
+            // 
+            // label5_3
+            // 
+            this.label5_3.AutoSize = true;
+            this.label5_3.BackColor = System.Drawing.Color.Black;
+            this.label5_3.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label5_3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5_3.Location = new System.Drawing.Point(28, 73);
+            this.label5_3.Name = "label5_3";
+            this.label5_3.Size = new System.Drawing.Size(65, 19);
+            this.label5_3.TabIndex = 5;
+            this.label5_3.Text = "접수대기";
+            // 
+            // label5_1
+            // 
+            this.label5_1.AutoSize = true;
+            this.label5_1.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label5_1.Location = new System.Drawing.Point(14, 15);
+            this.label5_1.Name = "label5_1";
+            this.label5_1.Size = new System.Drawing.Size(109, 19);
+            this.label5_1.TabIndex = 4;
+            this.label5_1.Text = "02월 06일 (목)";
             // 
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Controls.Add(this.label26);
-            this.panel11.Controls.Add(this.label27);
-            this.panel11.Controls.Add(this.label28);
-            this.panel11.Controls.Add(this.label29);
+            this.panel11.Controls.Add(this.label4_3_1);
+            this.panel11.Controls.Add(this.label4_8);
+            this.panel11.Controls.Add(this.button10);
+            this.panel11.Controls.Add(this.label4_7);
+            this.panel11.Controls.Add(this.label4_6);
+            this.panel11.Controls.Add(this.label4_5);
+            this.panel11.Controls.Add(this.label4_2);
+            this.panel11.Controls.Add(this.label4_4);
+            this.panel11.Controls.Add(this.label4_3);
+            this.panel11.Controls.Add(this.label4_1);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel11.Location = new System.Drawing.Point(0, 300);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(696, 100);
-            this.panel11.TabIndex = 11;
+            this.panel11.Size = new System.Drawing.Size(599, 100);
+            this.panel11.TabIndex = 38;
             this.panel11.Visible = false;
-            this.panel11.Paint += new System.Windows.Forms.PaintEventHandler(this.panel11_Paint);
+            this.panel11.Click += new System.EventHandler(this.panel11_Click);
             // 
-            // label26
+            // label4_3_1
             // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label26.Location = new System.Drawing.Point(13, 44);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(49, 19);
-            this.label26.TabIndex = 7;
-            this.label26.Text = "17:18";
+            this.label4_3_1.AutoSize = true;
+            this.label4_3_1.BackColor = System.Drawing.Color.Black;
+            this.label4_3_1.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label4_3_1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4_3_1.Location = new System.Drawing.Point(28, 73);
+            this.label4_3_1.Name = "label4_3_1";
+            this.label4_3_1.Size = new System.Drawing.Size(51, 19);
+            this.label4_3_1.TabIndex = 17;
+            this.label4_3_1.Text = "준비중";
+            this.label4_3_1.Visible = false;
             // 
-            // label27
+            // label4_8
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label27.Location = new System.Drawing.Point(219, 46);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(141, 19);
-            this.label27.TabIndex = 6;
-            this.label27.Text = "[메뉴 2개] 10000원";
+            this.label4_8.AutoSize = true;
+            this.label4_8.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label4_8.Location = new System.Drawing.Point(424, 73);
+            this.label4_8.Name = "label4_8";
+            this.label4_8.Size = new System.Drawing.Size(18, 19);
+            this.label4_8.TabIndex = 16;
+            this.label4_8.Text = "-";
+            this.label4_8.Visible = false;
             // 
-            // label28
+            // button10
             // 
-            this.label28.AutoSize = true;
-            this.label28.BackColor = System.Drawing.Color.Black;
-            this.label28.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label28.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label28.Location = new System.Drawing.Point(28, 73);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(65, 19);
-            this.label28.TabIndex = 5;
-            this.label28.Text = "접수대기";
+            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button10.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button10.Location = new System.Drawing.Point(507, 15);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(69, 71);
+            this.button10.TabIndex = 15;
+            this.button10.Text = "주문표 인쇄";
+            this.button10.UseVisualStyleBackColor = false;
             // 
-            // label29
+            // label4_7
             // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label29.Location = new System.Drawing.Point(14, 15);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(109, 19);
-            this.label29.TabIndex = 4;
-            this.label29.Text = "02월 06일 (목)";
+            this.label4_7.AutoSize = true;
+            this.label4_7.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label4_7.Location = new System.Drawing.Point(424, 57);
+            this.label4_7.Name = "label4_7";
+            this.label4_7.Size = new System.Drawing.Size(18, 19);
+            this.label4_7.TabIndex = 14;
+            this.label4_7.Text = "-";
+            this.label4_7.Visible = false;
+            // 
+            // label4_6
+            // 
+            this.label4_6.AutoSize = true;
+            this.label4_6.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label4_6.Location = new System.Drawing.Point(424, 34);
+            this.label4_6.Name = "label4_6";
+            this.label4_6.Size = new System.Drawing.Size(18, 19);
+            this.label4_6.TabIndex = 13;
+            this.label4_6.Text = "-";
+            this.label4_6.Visible = false;
+            // 
+            // label4_5
+            // 
+            this.label4_5.AutoSize = true;
+            this.label4_5.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label4_5.Location = new System.Drawing.Point(424, 15);
+            this.label4_5.Name = "label4_5";
+            this.label4_5.Size = new System.Drawing.Size(18, 19);
+            this.label4_5.TabIndex = 12;
+            this.label4_5.Text = "-";
+            this.label4_5.Visible = false;
+            // 
+            // label4_2
+            // 
+            this.label4_2.AutoSize = true;
+            this.label4_2.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label4_2.Location = new System.Drawing.Point(13, 44);
+            this.label4_2.Name = "label4_2";
+            this.label4_2.Size = new System.Drawing.Size(49, 19);
+            this.label4_2.TabIndex = 7;
+            this.label4_2.Text = "17:18";
+            // 
+            // label4_4
+            // 
+            this.label4_4.AutoSize = true;
+            this.label4_4.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label4_4.Location = new System.Drawing.Point(219, 46);
+            this.label4_4.Name = "label4_4";
+            this.label4_4.Size = new System.Drawing.Size(141, 19);
+            this.label4_4.TabIndex = 6;
+            this.label4_4.Text = "[메뉴 2개] 10000원";
+            // 
+            // label4_3
+            // 
+            this.label4_3.AutoSize = true;
+            this.label4_3.BackColor = System.Drawing.Color.Black;
+            this.label4_3.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label4_3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4_3.Location = new System.Drawing.Point(28, 73);
+            this.label4_3.Name = "label4_3";
+            this.label4_3.Size = new System.Drawing.Size(65, 19);
+            this.label4_3.TabIndex = 5;
+            this.label4_3.Text = "접수대기";
+            // 
+            // label4_1
+            // 
+            this.label4_1.AutoSize = true;
+            this.label4_1.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label4_1.Location = new System.Drawing.Point(14, 15);
+            this.label4_1.Name = "label4_1";
+            this.label4_1.Size = new System.Drawing.Size(109, 19);
+            this.label4_1.TabIndex = 4;
+            this.label4_1.Text = "02월 06일 (목)";
             // 
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel12.Controls.Add(this.label30);
-            this.panel12.Controls.Add(this.label31);
-            this.panel12.Controls.Add(this.label32);
-            this.panel12.Controls.Add(this.label33);
+            this.panel12.Controls.Add(this.label3_3_1);
+            this.panel12.Controls.Add(this.label3_8);
+            this.panel12.Controls.Add(this.button9);
+            this.panel12.Controls.Add(this.label3_7);
+            this.panel12.Controls.Add(this.label3_6);
+            this.panel12.Controls.Add(this.label3_5);
+            this.panel12.Controls.Add(this.label3_2);
+            this.panel12.Controls.Add(this.label3_4);
+            this.panel12.Controls.Add(this.label3_3);
+            this.panel12.Controls.Add(this.label3_1);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel12.Location = new System.Drawing.Point(0, 200);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(696, 100);
-            this.panel12.TabIndex = 10;
+            this.panel12.Size = new System.Drawing.Size(599, 100);
+            this.panel12.TabIndex = 37;
             this.panel12.Visible = false;
-            this.panel12.Paint += new System.Windows.Forms.PaintEventHandler(this.panel12_Paint);
+            this.panel12.Click += new System.EventHandler(this.panel12_Click);
             // 
-            // label30
+            // label3_3_1
             // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label30.Location = new System.Drawing.Point(13, 44);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(49, 19);
-            this.label30.TabIndex = 7;
-            this.label30.Text = "17:18";
+            this.label3_3_1.AutoSize = true;
+            this.label3_3_1.BackColor = System.Drawing.Color.Black;
+            this.label3_3_1.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3_3_1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3_3_1.Location = new System.Drawing.Point(28, 73);
+            this.label3_3_1.Name = "label3_3_1";
+            this.label3_3_1.Size = new System.Drawing.Size(51, 19);
+            this.label3_3_1.TabIndex = 17;
+            this.label3_3_1.Text = "준비중";
+            this.label3_3_1.Visible = false;
             // 
-            // label31
+            // label3_8
             // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label31.Location = new System.Drawing.Point(219, 46);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(141, 19);
-            this.label31.TabIndex = 6;
-            this.label31.Text = "[메뉴 2개] 10000원";
+            this.label3_8.AutoSize = true;
+            this.label3_8.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3_8.Location = new System.Drawing.Point(424, 74);
+            this.label3_8.Name = "label3_8";
+            this.label3_8.Size = new System.Drawing.Size(18, 19);
+            this.label3_8.TabIndex = 16;
+            this.label3_8.Text = "-";
+            this.label3_8.Visible = false;
             // 
-            // label32
+            // button9
             // 
-            this.label32.AutoSize = true;
-            this.label32.BackColor = System.Drawing.Color.Black;
-            this.label32.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label32.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label32.Location = new System.Drawing.Point(28, 73);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(65, 19);
-            this.label32.TabIndex = 5;
-            this.label32.Text = "접수대기";
+            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button9.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button9.Location = new System.Drawing.Point(507, 15);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(69, 71);
+            this.button9.TabIndex = 15;
+            this.button9.Text = "주문표 인쇄";
+            this.button9.UseVisualStyleBackColor = false;
             // 
-            // label33
+            // label3_7
             // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label33.Location = new System.Drawing.Point(14, 15);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(109, 19);
-            this.label33.TabIndex = 4;
-            this.label33.Text = "02월 06일 (목)";
+            this.label3_7.AutoSize = true;
+            this.label3_7.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3_7.Location = new System.Drawing.Point(424, 60);
+            this.label3_7.Name = "label3_7";
+            this.label3_7.Size = new System.Drawing.Size(18, 19);
+            this.label3_7.TabIndex = 14;
+            this.label3_7.Text = "-";
+            this.label3_7.Visible = false;
             // 
-            // panel5
+            // label3_6
             // 
-            this.panel5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.label2);
-            this.panel5.Controls.Add(this.label3);
-            this.panel5.Controls.Add(this.label4);
-            this.panel5.Controls.Add(this.label5);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 100);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(696, 100);
-            this.panel5.TabIndex = 2;
-            this.panel5.Visible = false;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
+            this.label3_6.AutoSize = true;
+            this.label3_6.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3_6.Location = new System.Drawing.Point(424, 41);
+            this.label3_6.Name = "label3_6";
+            this.label3_6.Size = new System.Drawing.Size(18, 19);
+            this.label3_6.TabIndex = 13;
+            this.label3_6.Text = "-";
+            this.label3_6.Visible = false;
             // 
-            // label2
+            // label3_5
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label2.Location = new System.Drawing.Point(13, 44);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 19);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "17:18";
+            this.label3_5.AutoSize = true;
+            this.label3_5.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3_5.Location = new System.Drawing.Point(424, 22);
+            this.label3_5.Name = "label3_5";
+            this.label3_5.Size = new System.Drawing.Size(18, 19);
+            this.label3_5.TabIndex = 12;
+            this.label3_5.Text = "-";
+            this.label3_5.Visible = false;
             // 
-            // label3
+            // label3_2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label3.Location = new System.Drawing.Point(219, 46);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(141, 19);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "[메뉴 2개] 10000원";
+            this.label3_2.AutoSize = true;
+            this.label3_2.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3_2.Location = new System.Drawing.Point(13, 44);
+            this.label3_2.Name = "label3_2";
+            this.label3_2.Size = new System.Drawing.Size(49, 19);
+            this.label3_2.TabIndex = 7;
+            this.label3_2.Text = "17:18";
             // 
-            // label4
+            // label3_4
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Black;
-            this.label4.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(28, 73);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 19);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "접수대기";
+            this.label3_4.AutoSize = true;
+            this.label3_4.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3_4.Location = new System.Drawing.Point(219, 46);
+            this.label3_4.Name = "label3_4";
+            this.label3_4.Size = new System.Drawing.Size(141, 19);
+            this.label3_4.TabIndex = 6;
+            this.label3_4.Text = "[메뉴 2개] 10000원";
             // 
-            // label5
+            // label3_3
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label5.Location = new System.Drawing.Point(14, 15);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(109, 19);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "02월 06일 (목)";
+            this.label3_3.AutoSize = true;
+            this.label3_3.BackColor = System.Drawing.Color.Black;
+            this.label3_3.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3_3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3_3.Location = new System.Drawing.Point(28, 73);
+            this.label3_3.Name = "label3_3";
+            this.label3_3.Size = new System.Drawing.Size(65, 19);
+            this.label3_3.TabIndex = 5;
+            this.label3_3.Text = "접수대기";
+            // 
+            // label3_1
+            // 
+            this.label3_1.AutoSize = true;
+            this.label3_1.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3_1.Location = new System.Drawing.Point(14, 15);
+            this.label3_1.Name = "label3_1";
+            this.label3_1.Size = new System.Drawing.Size(109, 19);
+            this.label3_1.TabIndex = 4;
+            this.label3_1.Text = "02월 06일 (목)";
+            // 
+            // panel5_1
+            // 
+            this.panel5_1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel5_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5_1.Controls.Add(this.label2_3_1);
+            this.panel5_1.Controls.Add(this.label2_8);
+            this.panel5_1.Controls.Add(this.button5);
+            this.panel5_1.Controls.Add(this.label2_7);
+            this.panel5_1.Controls.Add(this.label2_6);
+            this.panel5_1.Controls.Add(this.label2_5);
+            this.panel5_1.Controls.Add(this.label2_2);
+            this.panel5_1.Controls.Add(this.label2_4);
+            this.panel5_1.Controls.Add(this.label2_3);
+            this.panel5_1.Controls.Add(this.label2_1);
+            this.panel5_1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5_1.Location = new System.Drawing.Point(0, 100);
+            this.panel5_1.Name = "panel5_1";
+            this.panel5_1.Size = new System.Drawing.Size(599, 100);
+            this.panel5_1.TabIndex = 36;
+            this.panel5_1.Visible = false;
+            this.panel5_1.Click += new System.EventHandler(this.panel5_1_Click);
+            // 
+            // label2_3_1
+            // 
+            this.label2_3_1.AutoSize = true;
+            this.label2_3_1.BackColor = System.Drawing.Color.Black;
+            this.label2_3_1.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2_3_1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2_3_1.Location = new System.Drawing.Point(28, 73);
+            this.label2_3_1.Name = "label2_3_1";
+            this.label2_3_1.Size = new System.Drawing.Size(51, 19);
+            this.label2_3_1.TabIndex = 17;
+            this.label2_3_1.Text = "준비중";
+            this.label2_3_1.Visible = false;
+            // 
+            // label2_8
+            // 
+            this.label2_8.AutoSize = true;
+            this.label2_8.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2_8.Location = new System.Drawing.Point(424, 73);
+            this.label2_8.Name = "label2_8";
+            this.label2_8.Size = new System.Drawing.Size(18, 19);
+            this.label2_8.TabIndex = 16;
+            this.label2_8.Text = "-";
+            this.label2_8.Visible = false;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button5.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button5.Location = new System.Drawing.Point(507, 15);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(69, 71);
+            this.button5.TabIndex = 15;
+            this.button5.Text = "주문표 인쇄";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // label2_7
+            // 
+            this.label2_7.AutoSize = true;
+            this.label2_7.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2_7.Location = new System.Drawing.Point(424, 53);
+            this.label2_7.Name = "label2_7";
+            this.label2_7.Size = new System.Drawing.Size(18, 19);
+            this.label2_7.TabIndex = 14;
+            this.label2_7.Text = "-";
+            this.label2_7.Visible = false;
+            // 
+            // label2_6
+            // 
+            this.label2_6.AutoSize = true;
+            this.label2_6.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2_6.Location = new System.Drawing.Point(424, 34);
+            this.label2_6.Name = "label2_6";
+            this.label2_6.Size = new System.Drawing.Size(18, 19);
+            this.label2_6.TabIndex = 13;
+            this.label2_6.Text = "-";
+            this.label2_6.Visible = false;
+            // 
+            // label2_5
+            // 
+            this.label2_5.AutoSize = true;
+            this.label2_5.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2_5.Location = new System.Drawing.Point(424, 15);
+            this.label2_5.Name = "label2_5";
+            this.label2_5.Size = new System.Drawing.Size(18, 19);
+            this.label2_5.TabIndex = 12;
+            this.label2_5.Text = "-";
+            this.label2_5.Visible = false;
+            // 
+            // label2_2
+            // 
+            this.label2_2.AutoSize = true;
+            this.label2_2.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2_2.Location = new System.Drawing.Point(13, 44);
+            this.label2_2.Name = "label2_2";
+            this.label2_2.Size = new System.Drawing.Size(49, 19);
+            this.label2_2.TabIndex = 7;
+            this.label2_2.Text = "17:18";
+            // 
+            // label2_4
+            // 
+            this.label2_4.AutoSize = true;
+            this.label2_4.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2_4.Location = new System.Drawing.Point(219, 46);
+            this.label2_4.Name = "label2_4";
+            this.label2_4.Size = new System.Drawing.Size(141, 19);
+            this.label2_4.TabIndex = 6;
+            this.label2_4.Text = "[메뉴 2개] 10000원";
+            // 
+            // label2_3
+            // 
+            this.label2_3.AutoSize = true;
+            this.label2_3.BackColor = System.Drawing.Color.Black;
+            this.label2_3.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2_3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2_3.Location = new System.Drawing.Point(28, 73);
+            this.label2_3.Name = "label2_3";
+            this.label2_3.Size = new System.Drawing.Size(65, 19);
+            this.label2_3.TabIndex = 5;
+            this.label2_3.Text = "접수대기";
+            // 
+            // label2_1
+            // 
+            this.label2_1.AutoSize = true;
+            this.label2_1.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2_1.Location = new System.Drawing.Point(14, 15);
+            this.label2_1.Name = "label2_1";
+            this.label2_1.Size = new System.Drawing.Size(109, 19);
+            this.label2_1.TabIndex = 4;
+            this.label2_1.Text = "02월 06일 (목)";
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.label1_3_1);
+            this.panel4.Controls.Add(this.label1_8);
+            this.panel4.Controls.Add(this.button4);
+            this.panel4.Controls.Add(this.label1_7);
+            this.panel4.Controls.Add(this.label1_6);
+            this.panel4.Controls.Add(this.label1_5);
             this.panel4.Controls.Add(this.label1_2);
             this.panel4.Controls.Add(this.label1_4);
             this.panel4.Controls.Add(this.label1_3);
@@ -621,9 +1419,80 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(696, 100);
-            this.panel4.TabIndex = 1;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+            this.panel4.Size = new System.Drawing.Size(599, 100);
+            this.panel4.TabIndex = 35;
+            this.panel4.Visible = false;
+            this.panel4.Click += new System.EventHandler(this.panel4_Click);
+            // 
+            // label1_3_1
+            // 
+            this.label1_3_1.AutoSize = true;
+            this.label1_3_1.BackColor = System.Drawing.Color.Black;
+            this.label1_3_1.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1_3_1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1_3_1.Location = new System.Drawing.Point(28, 73);
+            this.label1_3_1.Name = "label1_3_1";
+            this.label1_3_1.Size = new System.Drawing.Size(51, 19);
+            this.label1_3_1.TabIndex = 16;
+            this.label1_3_1.Text = "준비중";
+            this.label1_3_1.Visible = false;
+            // 
+            // label1_8
+            // 
+            this.label1_8.AutoSize = true;
+            this.label1_8.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1_8.Location = new System.Drawing.Point(424, 77);
+            this.label1_8.Name = "label1_8";
+            this.label1_8.Size = new System.Drawing.Size(18, 19);
+            this.label1_8.TabIndex = 15;
+            this.label1_8.Text = "-";
+            this.label1_8.Visible = false;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button4.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button4.Location = new System.Drawing.Point(507, 15);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(69, 71);
+            this.button4.TabIndex = 14;
+            this.button4.Text = "주문표 인쇄";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // label1_7
+            // 
+            this.label1_7.AutoSize = true;
+            this.label1_7.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1_7.Location = new System.Drawing.Point(424, 62);
+            this.label1_7.Name = "label1_7";
+            this.label1_7.Size = new System.Drawing.Size(18, 19);
+            this.label1_7.TabIndex = 13;
+            this.label1_7.Text = "-";
+            this.label1_7.Visible = false;
+            // 
+            // label1_6
+            // 
+            this.label1_6.AutoSize = true;
+            this.label1_6.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1_6.Location = new System.Drawing.Point(424, 43);
+            this.label1_6.Name = "label1_6";
+            this.label1_6.Size = new System.Drawing.Size(18, 19);
+            this.label1_6.TabIndex = 12;
+            this.label1_6.Text = "-";
+            this.label1_6.Visible = false;
+            // 
+            // label1_5
+            // 
+            this.label1_5.AutoSize = true;
+            this.label1_5.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1_5.Location = new System.Drawing.Point(424, 24);
+            this.label1_5.Name = "label1_5";
+            this.label1_5.Size = new System.Drawing.Size(18, 19);
+            this.label1_5.TabIndex = 11;
+            this.label1_5.Text = "-";
+            this.label1_5.Visible = false;
             // 
             // label1_2
             // 
@@ -667,204 +1536,60 @@
             this.label1_1.TabIndex = 4;
             this.label1_1.Text = "02월 06일 (목)";
             // 
-            // dataGridView1
+            // panel100
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 27;
-            this.dataGridView1.Size = new System.Drawing.Size(717, 324);
-            this.dataGridView1.TabIndex = 0;
+            this.panel100.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel100.Controls.Add(this.button17);
+            this.panel100.Controls.Add(this.button16);
+            this.panel100.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel100.Location = new System.Drawing.Point(0, 0);
+            this.panel100.Name = "panel100";
+            this.panel100.Size = new System.Drawing.Size(620, 70);
+            this.panel100.TabIndex = 0;
             // 
-            // button8
+            // button17
             // 
-            this.button8.BackColor = System.Drawing.Color.LightGray;
-            this.button8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button8.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button8.Location = new System.Drawing.Point(0, 230);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(138, 115);
-            this.button8.TabIndex = 2;
-            this.button8.Text = "주문접수";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            this.button8.MouseLeave += new System.EventHandler(this.button8_MouseLeave);
-            this.button8.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button8_MouseMove);
+            this.button17.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button17.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button17.Location = new System.Drawing.Point(150, 0);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(150, 70);
+            this.button17.TabIndex = 1;
+            this.button17.Text = "준비중";
+            this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
-            // button7
+            // button16
             // 
-            this.button7.BackColor = System.Drawing.Color.LightGray;
-            this.button7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button7.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button7.Location = new System.Drawing.Point(0, 115);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(138, 115);
-            this.button7.TabIndex = 1;
-            this.button7.Text = "주문거부";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.MouseLeave += new System.EventHandler(this.button7_MouseLeave);
-            this.button7.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button7_MouseMove);
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.LightGray;
-            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button6.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button6.Location = new System.Drawing.Point(0, 0);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(138, 115);
-            this.button6.TabIndex = 0;
-            this.button6.Text = "주문표 인쇄";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            this.button6.MouseLeave += new System.EventHandler(this.button6_MouseLeave);
-            this.button6.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button6_MouseMove);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.DarkGray;
-            this.panel2.Controls.Add(this.button5);
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 71);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(859, 71);
-            this.panel2.TabIndex = 7;
-            // 
-            // button5
-            // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button5.Location = new System.Drawing.Point(200, 0);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(200, 71);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "거래중";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            this.button5.MouseLeave += new System.EventHandler(this.button5_MouseLeave);
-            this.button5.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button5_MouseMove);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.White;
-            this.button4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button4.Location = new System.Drawing.Point(0, 0);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(200, 71);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "접수대기";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            this.button4.MouseLeave += new System.EventHandler(this.button4_MouseLeave);
-            this.button4.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button4_MouseMove);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(859, 71);
-            this.panel1.TabIndex = 6;
-            // 
-            // button3
-            // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Location = new System.Drawing.Point(802, 17);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(45, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "x";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
-            // 
-            // button2
-            // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(751, 17);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(45, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "ㅁ";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(700, 17);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(45, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "-";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("AlternateGothic2 BT", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label1.Location = new System.Drawing.Point(12, 17);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 28);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "ook pos";
-            // 
-            // printDocument1
-            // 
-            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
-            // 
-            // printDialog1
-            // 
-            this.printDialog1.UseEXDialog = true;
-            // 
-            // printPreviewDialog1
-            // 
-            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
-            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
-            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
-            this.printPreviewDialog1.Enabled = true;
-            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
-            this.printPreviewDialog1.Name = "printPreviewDialog1";
-            this.printPreviewDialog1.Visible = false;
+            this.button16.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button16.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button16.Location = new System.Drawing.Point(0, 0);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(150, 70);
+            this.button16.TabIndex = 0;
+            this.button16.Text = "접수대기";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // confirm_order
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(859, 471);
+            this.ClientSize = new System.Drawing.Size(620, 504);
             this.ControlBox = false;
-            this.Controls.Add(this.splitContainer1);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "confirm_order";
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -879,81 +1604,132 @@
             this.panel11.PerformLayout();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
+            this.panel5_1.ResumeLayout(false);
+            this.panel5_1.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panel100.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.PrintDialog printDialog1;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Label label9_8;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Label label9_7;
+        private System.Windows.Forms.Label label9_6;
+        private System.Windows.Forms.Label label9_5;
+        private System.Windows.Forms.Label label9_2;
+        private System.Windows.Forms.Label label9_4;
+        private System.Windows.Forms.Label label9_3;
+        private System.Windows.Forms.Label label9_1;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label label8_8;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Label label8_7;
+        private System.Windows.Forms.Label label8_6;
+        private System.Windows.Forms.Label label8_5;
+        private System.Windows.Forms.Label label8_2;
+        private System.Windows.Forms.Label label8_4;
+        private System.Windows.Forms.Label label8_3;
+        private System.Windows.Forms.Label label8_1;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Label label7_8;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Label label7_7;
+        private System.Windows.Forms.Label label7_6;
+        private System.Windows.Forms.Label label7_5;
+        private System.Windows.Forms.Label label7_2;
+        private System.Windows.Forms.Label label7_4;
+        private System.Windows.Forms.Label label7_3;
+        private System.Windows.Forms.Label label7_1;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Label label6_8;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Label label6_7;
+        private System.Windows.Forms.Label label6_6;
+        private System.Windows.Forms.Label label6_5;
+        private System.Windows.Forms.Label label6_2;
+        private System.Windows.Forms.Label label6_4;
+        private System.Windows.Forms.Label label6_3;
+        private System.Windows.Forms.Label label6_1;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Label label5_8;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Label label5_7;
+        private System.Windows.Forms.Label label5_6;
+        private System.Windows.Forms.Label label5_5;
+        private System.Windows.Forms.Label label5_2;
+        private System.Windows.Forms.Label label5_4;
+        private System.Windows.Forms.Label label5_3;
+        private System.Windows.Forms.Label label5_1;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Label label4_8;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Label label4_7;
+        private System.Windows.Forms.Label label4_6;
+        private System.Windows.Forms.Label label4_5;
+        private System.Windows.Forms.Label label4_2;
+        private System.Windows.Forms.Label label4_4;
+        private System.Windows.Forms.Label label4_3;
+        private System.Windows.Forms.Label label4_1;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Label label3_8;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Label label3_7;
+        private System.Windows.Forms.Label label3_6;
+        private System.Windows.Forms.Label label3_5;
+        private System.Windows.Forms.Label label3_2;
+        private System.Windows.Forms.Label label3_4;
+        private System.Windows.Forms.Label label3_3;
+        private System.Windows.Forms.Label label3_1;
+        private System.Windows.Forms.Panel panel5_1;
+        private System.Windows.Forms.Label label2_8;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label label2_7;
+        private System.Windows.Forms.Label label2_6;
+        private System.Windows.Forms.Label label2_5;
+        private System.Windows.Forms.Label label2_2;
+        private System.Windows.Forms.Label label2_4;
+        private System.Windows.Forms.Label label2_3;
+        private System.Windows.Forms.Label label2_1;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label1_8;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label1_7;
+        private System.Windows.Forms.Label label1_6;
+        private System.Windows.Forms.Label label1_5;
         private System.Windows.Forms.Label label1_2;
         private System.Windows.Forms.Label label1_4;
         private System.Windows.Forms.Label label1_3;
         private System.Windows.Forms.Label label1_1;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Panel panel100;
+        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Label label9_3_1;
+        private System.Windows.Forms.Label label8_3_1;
+        private System.Windows.Forms.Label label7_3_1;
+        private System.Windows.Forms.Label label6_3_1;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Label label5_3_1;
+        private System.Windows.Forms.Label label4_3_1;
+        private System.Windows.Forms.Label label3_3_1;
+        private System.Windows.Forms.Label label2_3_1;
+        private System.Windows.Forms.Label label1_3_1;
     }
 }

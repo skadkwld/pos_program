@@ -20,12 +20,12 @@ namespace ook_pos_program
     {
         SoundPlayer sp = new SoundPlayer();
         string file = (string)@"C:\주문이 접수되었습니다.wav";
-        string strconn = string.Format(@"server=localhost;database=kiosk;user=root;password=1234");
+        //string strconn = string.Format(@"server=localhost;database=kiosk;user=root;password=1234");
         string ing = "ING..";
         string t = "T";
         string f = "F";
         int rowNum = 0;
-        //string strconn = string.Format(@"server=mydb.cmkvwrcpwpyc.ap-northeast-2.rds.amazonaws.com;database=ook;user=admin;password=young1700!");
+        string strconn = string.Format(@"server=mydb.cmkvwrcpwpyc.ap-northeast-2.rds.amazonaws.com;database=ook;user=admin;password=young1700!");
         order order = new order();
         adapter ad = new adapter();
         DataTable dt = null;
@@ -41,6 +41,7 @@ namespace ook_pos_program
         {
             InitializeComponent();
             dataGridView_binding();
+            fillPanel();
         }
 
         public Form3(string[,] strData, int HowManyInsert, int price)
@@ -66,147 +67,19 @@ namespace ook_pos_program
             MySqlConnection conn = new MySqlConnection(strconn);
 
             conn.Open();
-            button6.Enabled = false;
+            //button6.Enabled = false;
 
-            string sumCount= "select count(*) from orderMenu where confirmed = '#confirmed'";
-            string binding = "select o.idorderMenu as '주문번호',o.currentDate as '주문날짜',o.name as '메뉴',m.price as '가격',o.count as '개수' from orderMenu o,menu m where o.name=m.name and o.confirmed='#confirmed' and currentDate='#currentDate' order by o.currentDate desc,o.idorderMenu desc";
-            string cnt_sameDate = "select count(currentDate) from orderMenu where currentDate='#sameDate' and confirmed = '#confirmed'"; //최대 idorderMenu의 날짜와 같은 날짜를 가지는 주문의 개수를 구하는 쿼리문
-            string max_idorderMenu = "select max(idorderMenu) from orderMenu where confirmed='#confirmed'";
-            string find_sameDate = "select currentDate from orderMenu where idorderMenu='#idorderMenu' order by currentDate desc,idorderMenu desc"; //최대 idorderMenu의 날짜를 구하는 쿼리문
-            string select_price = "select sum(m.price) from orderMenu o, menu m where o.currentDate='#currentDate' and o.name=m.name and o.confirmed='#confirmed'";
-            int maxIdorderMenu =0;
-            string same_date = string.Empty;
-            string sameDate_count = string.Empty;
-
-            int sameDateCount_temp = 0;
-
-            int price = 0;
-
-            int sum_count = 0;
-
-            sumCount = sumCount.Replace("#confirmed", f.ToString());
-            MySqlCommand findSumCount = new MySqlCommand(sumCount, conn);
-            sum_count = Convert.ToInt32(findSumCount.ExecuteScalar());
-
-           
-
-                //최대 idorderMenu를 구하기 위한 코드--------------------------------------------------------------------------------
-
-                max_idorderMenu = max_idorderMenu.Replace("#confirmed", f.ToString());
-                MySqlCommand find_max = new MySqlCommand(max_idorderMenu, conn); //최대 idorderMenu값 찾기위한 쿼리문의 커맨더
-                maxIdorderMenu = Convert.ToInt32(find_max.ExecuteScalar());
-                MessageBox.Show(maxIdorderMenu.ToString());
-
-                //------------------------------------------------------------------------------------------------------------------
-
-                //같은 날짜를 구하기 위한 코드----------------------------------------------------------------------------------------
-
-                find_sameDate = find_sameDate.Replace("#idorderMenu", maxIdorderMenu.ToString());
-                MySqlCommand findDate = new MySqlCommand(find_sameDate, conn);
-                same_date = Convert.ToString(findDate.ExecuteScalar());
-                MessageBox.Show(same_date.ToString());
-
-                //--------------------------------------------------------
-
-                //같은 날짜인 주문의 개수를 구하는 코드--------------------------------------------------------------------------------
-
-                cnt_sameDate = cnt_sameDate.Replace("#confirmed", f.ToString());
-                cnt_sameDate = cnt_sameDate.Replace("#sameDate", same_date.ToString());
-                MySqlCommand findCount = new MySqlCommand(cnt_sameDate, conn);
-                sameDate_count = Convert.ToString(findCount.ExecuteScalar());
-                MessageBox.Show(sameDate_count.ToString());
-
-
-                //------------------------------------------------------------------------------------------------------------------
-
-                //같은 날짜의 주문의 가격의 누적합을 구하는 코드------------------------------------------------------------------------
-
-                select_price = select_price.Replace("#currentDate", same_date.ToString());
-                select_price = select_price.Replace("#confirmed", f.ToString());
-                MySqlCommand findPrice = new MySqlCommand(select_price, conn);
-                price = Convert.ToInt32(findPrice.ExecuteScalar());
-                //MessageBox.Show(price.ToString());
-
-
-                //------------------------------------------------------------------------------------------------------------------
+            string binding = "select o.idorderMenu as '주문번호',o.currentDate as '주문날짜',o.name as '메뉴',m.price as '가격',o.count as '개수' from orderMenu o,menu m where o.name=m.name and o.confirmed='#confirmed' order by o.currentDate desc,o.idorderMenu desc";
 
             
-
+            //데이터그리드뷰 코드-----------------------------------
 
             binding = binding.Replace("#confirmed", f.ToString());
-            binding = binding.Replace("#currentDate", same_date.ToString());
-            MySqlCommand cmd = new MySqlCommand(binding, conn);
-            MySqlDataReader rdr = cmd.ExecuteReader();
-
-            sameDateCount_temp = Convert.ToInt32(sameDate_count);
-            while (rdr.Read())
-            {
-                
-
-                switch (panelCount) {
-                    case 0:
-                        label1_1.Text = Convert.ToDateTime(rdr["주문날짜"]).ToString("MM월 dd일 (ddd)");
-                        label1_2.Text = Convert.ToDateTime(rdr["주문날짜"]).ToString("HH시 mm분 ss초");
-                        label1_4.Text = String.Format("[메뉴 {0}개] {1}원", sameDate_count, price);
-                        break;
-                    case 1:
-                        panel5.Visible = true;
-                        label2_1.Text = Convert.ToDateTime(rdr["주문날짜"]).ToString("MM월 dd일 (ddd)");
-                        label2_2.Text = Convert.ToDateTime(rdr["주문날짜"]).ToString("HH시 mm분 ss초");
-                        label2_4.Text = String.Format("[메뉴 {0}개] {1}원", sameDate_count, price);
-                        break;
-                    case 2:
-                        panel12.Visible = true;
-                        label3_1.Text = Convert.ToDateTime(rdr["주문날짜"]).ToString("MM월 dd일 (ddd)");
-                        label3_2.Text = Convert.ToDateTime(rdr["주문날짜"]).ToString("HH시 mm분 ss초");
-                        label3_4.Text = String.Format("[메뉴 {0}개] {1}원", sameDate_count, price);
-                        break;
-                    case 3:
-                        panel11.Visible = true;
-                        label4_1.Text = Convert.ToDateTime(rdr["주문날짜"]).ToString("MM월 dd일 (ddd)");
-                        label4_2.Text = Convert.ToDateTime(rdr["주문날짜"]).ToString("HH시 mm분 ss초");
-                        label4_4.Text = String.Format("[메뉴 {0}개] {1}원", sameDate_count, price);
-                        break;
-                    case 4:
-                        panel10.Visible = true;
-                        label5_1.Text = Convert.ToDateTime(rdr["주문날짜"]).ToString("MM월 dd일 (ddd)");
-                        label5_2.Text = Convert.ToDateTime(rdr["주문날짜"]).ToString("HH시 mm분 ss초");
-                        label5_4.Text = String.Format("[메뉴 {0}개] {1}원", sameDate_count, price);
-                        break;
-                    case 5:
-                        panel9.Visible = true;
-                        label6_1.Text = Convert.ToDateTime(rdr["주문날짜"]).ToString("MM월 dd일 (ddd)");
-                        label6_2.Text = Convert.ToDateTime(rdr["주문날짜"]).ToString("HH시 mm분 ss초");
-                        label6_4.Text = String.Format("[메뉴 {0}개] {1}원", sameDate_count, price);
-                        break;
-                    case 6:
-                        panel8.Visible = true;
-                        label7_1.Text = Convert.ToDateTime(rdr["주문날짜"]).ToString("MM월 dd일 (ddd)");
-                        label7_2.Text = Convert.ToDateTime(rdr["주문날짜"]).ToString("HH시 mm분 ss초");
-                        label7_4.Text = String.Format("[메뉴 {0}개] {1}원", sameDate_count, price);
-                        break;
-                    case 7:
-                        panel6.Visible = true;
-                        label8_1.Text = Convert.ToDateTime(rdr["주문날짜"]).ToString("MM월 dd일 (ddd)");
-                        label8_2.Text = Convert.ToDateTime(rdr["주문날짜"]).ToString("HH시 mm분 ss초");
-                        label8_4.Text = String.Format("[메뉴 {0}개] {1}원", sameDate_count, price);
-                        break;
-                    case 8:
-                        panel7.Visible = true;
-                        label9_1.Text = Convert.ToDateTime(rdr["주문날짜"]).ToString("MM월 dd일 (ddd)");
-                        label9_2.Text = Convert.ToDateTime(rdr["주문날짜"]).ToString("HH시 mm분 ss초");
-                        label9_4.Text = String.Format("[메뉴 {0}개] {1}원", sameDate_count, price);
-                        break;
-                    case 9:
-                        break;
-            }
-                sameDateCount_temp--;
-                if (sameDateCount_temp >= 1) panelCount = panelCount;
-                else panelCount++;
-
-                //panelCount++;
-            }
-
+            MySqlDataAdapter adapter = new MySqlDataAdapter(binding, conn);
+            MySqlCommandBuilder builder = new MySqlCommandBuilder(adapter);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            dataGridView1.DataSource = dt;
 
             conn.Close();
             // dataGridView1.DataSource = dt;
@@ -299,6 +172,292 @@ namespace ook_pos_program
             // If there are no more pages, reset the string to be printed.
             if (!e.HasMorePages)
                 stringToPrint = documentContents;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public void fillPanel()
+        {
+            int panelNum = 0;
+            int exit = 0;
+
+            while (true)
+            {
+
+                switch (panelNum)
+                {
+                    case 0:
+                        panel4.Visible = true;
+                        getDatagridview(0);
+                        break;
+                    case 1:
+                        panel5.Visible = true;
+                        getDatagridview(1);
+                        //exit = 1;
+                        break;
+                    case 2:
+                        panel12.Visible = true;
+                        getDatagridview(2);
+                        //exit = 1;
+                        break;
+                    case 3:
+                        panel11.Visible = true;
+                        getDatagridview(3);
+                        //exit = 1;
+                        break;
+                    case 4:
+                        panel10.Visible = true;
+                        getDatagridview(4);
+                        break;
+                        //case 5:
+                        //    panel9.Visible = true;
+                        //    break;
+                        //case 6:
+                        //    panel8.Visible = true;
+                        //    break;
+                        //case 7:
+                        //    panel6.Visible = true;
+                        //    break;
+                        //case 8:
+                        //    panel7.Visible = true;
+                        //    break;
+
+                }
+
+                if (dataGridView1.Rows.Count==1) break;
+                panelNum++;
+            }
+        }
+        
+        public void getDatagridview(int flag)
+        {
+            int i = 0, j = 0;
+            
+            string[] orderNum = new string[10];
+            string[] orderDate = new string[10];
+            string[] menuName = new string[10];
+            int price = 0;
+            int[] num = new int[10];
+
+            int totalPrice = 0;
+            int totalNum = 0;
+
+
+            while (true)
+            {
+                
+                //데이터그리드뷰에 이 행까지만 존재하면
+                if (dataGridView1.Rows[i+1].Cells[1].Value == null)
+                {
+                    orderNum[j] = dataGridView1.Rows[i].Cells[0].Value.ToString();
+                    orderDate[j] = dataGridView1.Rows[i].Cells[1].Value.ToString();
+
+                    menuName[j] = dataGridView1.Rows[i].Cells[2].Value.ToString();
+                    price = Convert.ToInt32(dataGridView1.Rows[i].Cells[3].Value);
+                    num[j] = Convert.ToInt32(dataGridView1.Rows[i].Cells[4].Value.ToString());
+
+                    fill_label(flag, orderDate[j],menuName[j],price,num[j]);
+
+                    totalPrice += (price*num[j]);
+                    totalNum += num[j];
+                    j++;
+                    break;
+                }
+
+                //현재 행의 날짜와 다음 행의 날짜가 같으면 
+                if (dataGridView1.Rows[i].Cells[1].Value.ToString() == dataGridView1.Rows[i + 1].Cells[1].Value.ToString())
+                {
+                    orderNum[j] = dataGridView1.Rows[i].Cells[0].Value.ToString();
+                    orderDate[j] = dataGridView1.Rows[i].Cells[1].Value.ToString();
+
+                    menuName[j] = dataGridView1.Rows[i].Cells[2].Value.ToString();
+                    price = Convert.ToInt32(dataGridView1.Rows[i].Cells[3].Value);
+                    num[j] = Convert.ToInt32(dataGridView1.Rows[i].Cells[4].Value.ToString());
+
+                    fill_label(flag, orderDate[j], menuName[j], price, num[j]);
+
+                    totalPrice += (price * num[j]);
+                    totalNum += num[j];
+                    // totalNum += num;
+
+                }
+
+                //현재 행의 날짜와 다음 행의 날짜가 다르면
+                else
+                {
+                    orderNum[j] = dataGridView1.Rows[i].Cells[0].Value.ToString();
+                    orderDate[j] = dataGridView1.Rows[i].Cells[1].Value.ToString();
+
+                    menuName[j] = dataGridView1.Rows[i].Cells[2].Value.ToString();
+                    price = Convert.ToInt32(dataGridView1.Rows[i].Cells[3].Value);
+                    num[j] = Convert.ToInt32(dataGridView1.Rows[i].Cells[4].Value.ToString());
+
+                    fill_label(flag, orderDate[j], menuName[j], price, num[j]);
+
+                    totalPrice += (price * num[j]);
+                    totalNum += num[j];
+                    j++;
+                    break;
+                }
+
+                j++;
+                i++;
+
+            }
+
+
+            //총가격 라벨에 표시
+            switch (flag)
+            {
+                case 0:
+                    label1_4.Text = string.Format("[메뉴 {0}개] {1}원", j, totalPrice);
+                    break;
+                case 1:
+                    label2_4.Text = string.Format("[메뉴 {0}개] {1}원", j, totalPrice);
+                    break;
+                case 2:
+                    label3_4.Text = string.Format("[메뉴 {0}개] {1}원", j, totalPrice);
+                    break;
+                case 3:
+                    label4_4.Text = string.Format("[메뉴 {0}개] {1}원", j, totalPrice);
+                    break;
+                case 4:
+                    label5_4.Text = string.Format("[메뉴 {0}개] {1}원", j, totalPrice);
+                    break;
+                    //case 5:
+                    //    panel9.Visible = true;
+                    //    break;
+                    //case 6:
+                    //    panel8.Visible = true;
+                    //    break;
+                    //case 7:
+                    //    panel6.Visible = true;
+                    //    break;
+                    //case 8:
+                    //    panel7.Visible = true;
+                    //    break;
+            }
+            
+            //데이터 그리드뷰에서 해당 주문 삭제
+            for (int temp = 0; temp < j; temp++)
+            {
+                dataGridView1.Rows.Remove(dataGridView1.Rows[0]);
+            }
+
+        }
+
+        public void fill_label(int flag,string date,string menuName,int price,int num)
+        {
+
+            switch (flag)
+            {
+                case 0:
+                    label1_1.Text = Convert.ToDateTime(date).ToString("MM월 dd일 (ddd)");
+                    label1_2.Text = Convert.ToDateTime(date).ToString("HH시 mm분 ss초");
+                    label1_5.Text = menuName;
+                    label1_6.Text = price.ToString();
+                    label1_7.Text = num.ToString();
+                    //MessageBox.Show(date);
+                    break;
+                case 1:
+                    label2_1.Text = Convert.ToDateTime(date).ToString("MM월 dd일 (ddd)");
+                    label2_2.Text = Convert.ToDateTime(date).ToString("HH시 mm분 ss초");
+                    label2_5.Text = menuName;
+                    label2_6.Text = price.ToString();
+                    label2_7.Text = num.ToString();
+                    break;
+                case 2:
+                    label3_1.Text = Convert.ToDateTime(date).ToString("MM월 dd일 (ddd)");
+                    label3_2.Text = Convert.ToDateTime(date).ToString("HH시 mm분 ss초");
+                    label3_5.Text = menuName;
+                    label3_6.Text = price.ToString();
+                    label3_7.Text = num.ToString();
+                    break;
+                case 3:
+                    label4_1.Text = Convert.ToDateTime(date).ToString("MM월 dd일 (ddd)");
+                    label4_2.Text = Convert.ToDateTime(date).ToString("HH시 mm분 ss초");
+                    label4_5.Text = menuName;
+                    label4_6.Text = price.ToString();
+                    label4_7.Text = num.ToString();
+                    break;
+                case 4:
+                    label5_1.Text = Convert.ToDateTime(date).ToString("MM월 dd일 (ddd)");
+                    label5_2.Text = Convert.ToDateTime(date).ToString("HH시 mm분 ss초");
+                    label5_5.Text = menuName;
+                    label5_6.Text = price.ToString();
+                    label5_7.Text = num.ToString();
+                    break;
+                    //case 5:
+                    //    panel9.Visible = true;
+                    //    break;
+                    //case 6:
+                    //    panel8.Visible = true;
+                    //    break;
+                    //case 7:
+                    //    panel6.Visible = true;
+                    //    break;
+                    //case 8:
+                    //    panel7.Visible = true;
+                    //    break;
+
+            }
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel12_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel11_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel10_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel4_Click(object sender, EventArgs e)
+        {
+            //panel_click p4 = new panel_click(label1_5.Text, label1_6.Text, label1_7.Text);
+            //p4.Show();
+        }
+
+        private void panel5_Click(object sender, EventArgs e)
+        {
+            //panel_click p5 = new panel_click(label2_5.Text, label2_6.Text, label2_7.Text);
+            //p5.Show();
+        }
+
+        private void panel12_Click(object sender, EventArgs e)
+        {
+            //panel_click p12 = new panel_click(label3_5.Text, label3_6.Text, label3_7.Text);
+            //p12.Show();
+        }
+
+        private void panel11_Click(object sender, EventArgs e)
+        {
+            //panel_click p11 = new panel_click(label4_5.Text, label4_6.Text, label4_7.Text);
+            //p11.Show();
+        }
+
+        private void panel10_Click(object sender, EventArgs e)
+        {
+            //panel_click p10 = new panel_click(label5_5.Text, label5_6.Text, label5_7.Text);
+            //p10.Show();
         }
     }
 }

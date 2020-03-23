@@ -31,26 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label9_2 = new System.Windows.Forms.Label();
-            this.label9_4 = new System.Windows.Forms.Label();
-            this.label9_3 = new System.Windows.Forms.Label();
-            this.label9_1 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label8_2 = new System.Windows.Forms.Label();
-            this.label8_4 = new System.Windows.Forms.Label();
-            this.label8_3 = new System.Windows.Forms.Label();
-            this.label8_1 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.label7_2 = new System.Windows.Forms.Label();
-            this.label7_4 = new System.Windows.Forms.Label();
-            this.label7_3 = new System.Windows.Forms.Label();
-            this.label7_1 = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.label6_2 = new System.Windows.Forms.Label();
-            this.label6_4 = new System.Windows.Forms.Label();
-            this.label6_3 = new System.Windows.Forms.Label();
-            this.label6_1 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label5_2 = new System.Windows.Forms.Label();
             this.label5_4 = new System.Windows.Forms.Label();
@@ -79,6 +59,7 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -90,20 +71,32 @@
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.label1_5 = new System.Windows.Forms.Label();
+            this.label2_5 = new System.Windows.Forms.Label();
+            this.label3_5 = new System.Windows.Forms.Label();
+            this.label4_5 = new System.Windows.Forms.Label();
+            this.label5_5 = new System.Windows.Forms.Label();
+            this.label1_6 = new System.Windows.Forms.Label();
+            this.label1_7 = new System.Windows.Forms.Label();
+            this.label2_6 = new System.Windows.Forms.Label();
+            this.label2_7 = new System.Windows.Forms.Label();
+            this.label3_6 = new System.Windows.Forms.Label();
+            this.label3_7 = new System.Windows.Forms.Label();
+            this.label4_6 = new System.Windows.Forms.Label();
+            this.label4_7 = new System.Windows.Forms.Label();
+            this.label5_6 = new System.Windows.Forms.Label();
+            this.label5_7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -127,16 +120,12 @@
             this.splitContainer1.Panel2.Controls.Add(this.button7);
             this.splitContainer1.Panel2.Controls.Add(this.button6);
             this.splitContainer1.Size = new System.Drawing.Size(862, 420);
-            this.splitContainer1.SplitterDistance = 719;
+            this.splitContainer1.SplitterDistance = 702;
             this.splitContainer1.TabIndex = 11;
             // 
             // panel3
             // 
             this.panel3.AutoScroll = true;
-            this.panel3.Controls.Add(this.panel7);
-            this.panel3.Controls.Add(this.panel6);
-            this.panel3.Controls.Add(this.panel8);
-            this.panel3.Controls.Add(this.panel9);
             this.panel3.Controls.Add(this.panel10);
             this.panel3.Controls.Add(this.panel11);
             this.panel3.Controls.Add(this.panel12);
@@ -145,241 +134,16 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(719, 420);
+            this.panel3.Size = new System.Drawing.Size(702, 420);
             this.panel3.TabIndex = 1;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Controls.Add(this.label9_2);
-            this.panel7.Controls.Add(this.label9_4);
-            this.panel7.Controls.Add(this.label9_3);
-            this.panel7.Controls.Add(this.label9_1);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 800);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(698, 100);
-            this.panel7.TabIndex = 16;
-            this.panel7.Visible = false;
-            // 
-            // label9_2
-            // 
-            this.label9_2.AutoSize = true;
-            this.label9_2.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label9_2.Location = new System.Drawing.Point(13, 44);
-            this.label9_2.Name = "label9_2";
-            this.label9_2.Size = new System.Drawing.Size(49, 19);
-            this.label9_2.TabIndex = 7;
-            this.label9_2.Text = "17:18";
-            // 
-            // label9_4
-            // 
-            this.label9_4.AutoSize = true;
-            this.label9_4.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label9_4.Location = new System.Drawing.Point(219, 46);
-            this.label9_4.Name = "label9_4";
-            this.label9_4.Size = new System.Drawing.Size(141, 19);
-            this.label9_4.TabIndex = 6;
-            this.label9_4.Text = "[메뉴 2개] 10000원";
-            // 
-            // label9_3
-            // 
-            this.label9_3.AutoSize = true;
-            this.label9_3.BackColor = System.Drawing.Color.Black;
-            this.label9_3.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label9_3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9_3.Location = new System.Drawing.Point(28, 73);
-            this.label9_3.Name = "label9_3";
-            this.label9_3.Size = new System.Drawing.Size(65, 19);
-            this.label9_3.TabIndex = 5;
-            this.label9_3.Text = "접수대기";
-            // 
-            // label9_1
-            // 
-            this.label9_1.AutoSize = true;
-            this.label9_1.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label9_1.Location = new System.Drawing.Point(14, 15);
-            this.label9_1.Name = "label9_1";
-            this.label9_1.Size = new System.Drawing.Size(109, 19);
-            this.label9_1.TabIndex = 4;
-            this.label9_1.Text = "02월 06일 (목)";
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.label8_2);
-            this.panel6.Controls.Add(this.label8_4);
-            this.panel6.Controls.Add(this.label8_3);
-            this.panel6.Controls.Add(this.label8_1);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 700);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(698, 100);
-            this.panel6.TabIndex = 15;
-            this.panel6.Visible = false;
-            // 
-            // label8_2
-            // 
-            this.label8_2.AutoSize = true;
-            this.label8_2.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label8_2.Location = new System.Drawing.Point(13, 44);
-            this.label8_2.Name = "label8_2";
-            this.label8_2.Size = new System.Drawing.Size(49, 19);
-            this.label8_2.TabIndex = 7;
-            this.label8_2.Text = "17:18";
-            // 
-            // label8_4
-            // 
-            this.label8_4.AutoSize = true;
-            this.label8_4.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label8_4.Location = new System.Drawing.Point(219, 46);
-            this.label8_4.Name = "label8_4";
-            this.label8_4.Size = new System.Drawing.Size(141, 19);
-            this.label8_4.TabIndex = 6;
-            this.label8_4.Text = "[메뉴 2개] 10000원";
-            // 
-            // label8_3
-            // 
-            this.label8_3.AutoSize = true;
-            this.label8_3.BackColor = System.Drawing.Color.Black;
-            this.label8_3.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label8_3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8_3.Location = new System.Drawing.Point(28, 73);
-            this.label8_3.Name = "label8_3";
-            this.label8_3.Size = new System.Drawing.Size(65, 19);
-            this.label8_3.TabIndex = 5;
-            this.label8_3.Text = "접수대기";
-            // 
-            // label8_1
-            // 
-            this.label8_1.AutoSize = true;
-            this.label8_1.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label8_1.Location = new System.Drawing.Point(14, 15);
-            this.label8_1.Name = "label8_1";
-            this.label8_1.Size = new System.Drawing.Size(109, 19);
-            this.label8_1.TabIndex = 4;
-            this.label8_1.Text = "02월 06일 (목)";
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel8.Controls.Add(this.label7_2);
-            this.panel8.Controls.Add(this.label7_4);
-            this.panel8.Controls.Add(this.label7_3);
-            this.panel8.Controls.Add(this.label7_1);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(0, 600);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(698, 100);
-            this.panel8.TabIndex = 14;
-            this.panel8.Visible = false;
-            // 
-            // label7_2
-            // 
-            this.label7_2.AutoSize = true;
-            this.label7_2.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label7_2.Location = new System.Drawing.Point(13, 44);
-            this.label7_2.Name = "label7_2";
-            this.label7_2.Size = new System.Drawing.Size(49, 19);
-            this.label7_2.TabIndex = 7;
-            this.label7_2.Text = "17:18";
-            // 
-            // label7_4
-            // 
-            this.label7_4.AutoSize = true;
-            this.label7_4.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label7_4.Location = new System.Drawing.Point(219, 46);
-            this.label7_4.Name = "label7_4";
-            this.label7_4.Size = new System.Drawing.Size(141, 19);
-            this.label7_4.TabIndex = 6;
-            this.label7_4.Text = "[메뉴 2개] 10000원";
-            // 
-            // label7_3
-            // 
-            this.label7_3.AutoSize = true;
-            this.label7_3.BackColor = System.Drawing.Color.Black;
-            this.label7_3.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label7_3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7_3.Location = new System.Drawing.Point(28, 73);
-            this.label7_3.Name = "label7_3";
-            this.label7_3.Size = new System.Drawing.Size(65, 19);
-            this.label7_3.TabIndex = 5;
-            this.label7_3.Text = "접수대기";
-            // 
-            // label7_1
-            // 
-            this.label7_1.AutoSize = true;
-            this.label7_1.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label7_1.Location = new System.Drawing.Point(14, 15);
-            this.label7_1.Name = "label7_1";
-            this.label7_1.Size = new System.Drawing.Size(109, 19);
-            this.label7_1.TabIndex = 4;
-            this.label7_1.Text = "02월 06일 (목)";
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel9.Controls.Add(this.label6_2);
-            this.panel9.Controls.Add(this.label6_4);
-            this.panel9.Controls.Add(this.label6_3);
-            this.panel9.Controls.Add(this.label6_1);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Location = new System.Drawing.Point(0, 500);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(698, 100);
-            this.panel9.TabIndex = 13;
-            this.panel9.Visible = false;
-            // 
-            // label6_2
-            // 
-            this.label6_2.AutoSize = true;
-            this.label6_2.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label6_2.Location = new System.Drawing.Point(13, 44);
-            this.label6_2.Name = "label6_2";
-            this.label6_2.Size = new System.Drawing.Size(49, 19);
-            this.label6_2.TabIndex = 7;
-            this.label6_2.Text = "17:18";
-            // 
-            // label6_4
-            // 
-            this.label6_4.AutoSize = true;
-            this.label6_4.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label6_4.Location = new System.Drawing.Point(219, 46);
-            this.label6_4.Name = "label6_4";
-            this.label6_4.Size = new System.Drawing.Size(141, 19);
-            this.label6_4.TabIndex = 6;
-            this.label6_4.Text = "[메뉴 2개] 10000원";
-            // 
-            // label6_3
-            // 
-            this.label6_3.AutoSize = true;
-            this.label6_3.BackColor = System.Drawing.Color.Black;
-            this.label6_3.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label6_3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6_3.Location = new System.Drawing.Point(28, 73);
-            this.label6_3.Name = "label6_3";
-            this.label6_3.Size = new System.Drawing.Size(65, 19);
-            this.label6_3.TabIndex = 5;
-            this.label6_3.Text = "접수대기";
-            // 
-            // label6_1
-            // 
-            this.label6_1.AutoSize = true;
-            this.label6_1.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label6_1.Location = new System.Drawing.Point(14, 15);
-            this.label6_1.Name = "label6_1";
-            this.label6_1.Size = new System.Drawing.Size(109, 19);
-            this.label6_1.TabIndex = 4;
-            this.label6_1.Text = "02월 06일 (목)";
             // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel10.Controls.Add(this.label5_7);
+            this.panel10.Controls.Add(this.label5_6);
+            this.panel10.Controls.Add(this.label5_5);
             this.panel10.Controls.Add(this.label5_2);
             this.panel10.Controls.Add(this.label5_4);
             this.panel10.Controls.Add(this.label5_3);
@@ -387,9 +151,11 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 400);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(698, 100);
-            this.panel10.TabIndex = 12;
+            this.panel10.Size = new System.Drawing.Size(681, 100);
+            this.panel10.TabIndex = 14;
             this.panel10.Visible = false;
+            this.panel10.Click += new System.EventHandler(this.panel10_Click);
+            this.panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.panel10_Paint);
             // 
             // label5_2
             // 
@@ -437,6 +203,9 @@
             // 
             this.panel11.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel11.Controls.Add(this.label4_7);
+            this.panel11.Controls.Add(this.label4_6);
+            this.panel11.Controls.Add(this.label4_5);
             this.panel11.Controls.Add(this.label4_2);
             this.panel11.Controls.Add(this.label4_4);
             this.panel11.Controls.Add(this.label4_3);
@@ -444,9 +213,11 @@
             this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel11.Location = new System.Drawing.Point(0, 300);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(698, 100);
-            this.panel11.TabIndex = 11;
+            this.panel11.Size = new System.Drawing.Size(681, 100);
+            this.panel11.TabIndex = 13;
             this.panel11.Visible = false;
+            this.panel11.Click += new System.EventHandler(this.panel11_Click);
+            this.panel11.Paint += new System.Windows.Forms.PaintEventHandler(this.panel11_Paint);
             // 
             // label4_2
             // 
@@ -494,6 +265,9 @@
             // 
             this.panel12.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel12.Controls.Add(this.label3_7);
+            this.panel12.Controls.Add(this.label3_6);
+            this.panel12.Controls.Add(this.label3_5);
             this.panel12.Controls.Add(this.label3_2);
             this.panel12.Controls.Add(this.label3_4);
             this.panel12.Controls.Add(this.label3_3);
@@ -501,9 +275,11 @@
             this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel12.Location = new System.Drawing.Point(0, 200);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(698, 100);
-            this.panel12.TabIndex = 10;
+            this.panel12.Size = new System.Drawing.Size(681, 100);
+            this.panel12.TabIndex = 11;
             this.panel12.Visible = false;
+            this.panel12.Click += new System.EventHandler(this.panel12_Click);
+            this.panel12.Paint += new System.Windows.Forms.PaintEventHandler(this.panel12_Paint);
             // 
             // label3_2
             // 
@@ -551,6 +327,9 @@
             // 
             this.panel5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.label2_7);
+            this.panel5.Controls.Add(this.label2_6);
+            this.panel5.Controls.Add(this.label2_5);
             this.panel5.Controls.Add(this.label2_2);
             this.panel5.Controls.Add(this.label2_4);
             this.panel5.Controls.Add(this.label2_3);
@@ -558,9 +337,11 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 100);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(698, 100);
-            this.panel5.TabIndex = 2;
+            this.panel5.Size = new System.Drawing.Size(681, 100);
+            this.panel5.TabIndex = 10;
             this.panel5.Visible = false;
+            this.panel5.Click += new System.EventHandler(this.panel5_Click);
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // label2_2
             // 
@@ -608,6 +389,9 @@
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.label1_7);
+            this.panel4.Controls.Add(this.label1_6);
+            this.panel4.Controls.Add(this.label1_5);
             this.panel4.Controls.Add(this.label1_2);
             this.panel4.Controls.Add(this.label1_4);
             this.panel4.Controls.Add(this.label1_3);
@@ -615,8 +399,10 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(698, 100);
-            this.panel4.TabIndex = 1;
+            this.panel4.Size = new System.Drawing.Size(681, 100);
+            this.panel4.TabIndex = 9;
+            this.panel4.Click += new System.EventHandler(this.panel4_Click);
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // label1_2
             // 
@@ -668,7 +454,7 @@
             this.button8.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button8.Location = new System.Drawing.Point(0, 230);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(139, 115);
+            this.button8.Size = new System.Drawing.Size(156, 115);
             this.button8.TabIndex = 2;
             this.button8.Text = "주문접수";
             this.button8.UseVisualStyleBackColor = false;
@@ -681,7 +467,7 @@
             this.button7.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button7.Location = new System.Drawing.Point(0, 115);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(139, 115);
+            this.button7.Size = new System.Drawing.Size(156, 115);
             this.button7.TabIndex = 1;
             this.button7.Text = "주문거부";
             this.button7.UseVisualStyleBackColor = false;
@@ -694,17 +480,29 @@
             this.button6.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button6.Location = new System.Drawing.Point(0, 0);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(139, 115);
+            this.button6.Size = new System.Drawing.Size(156, 115);
             this.button6.TabIndex = 0;
             this.button6.Text = "주문표 인쇄";
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(542, 6);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 27;
+            this.dataGridView1.Size = new System.Drawing.Size(78, 55);
+            this.dataGridView1.TabIndex = 8;
+            this.dataGridView1.Visible = false;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkGray;
             this.panel2.Controls.Add(this.button5);
             this.panel2.Controls.Add(this.button4);
+            this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 71);
             this.panel2.Name = "panel2";
@@ -737,6 +535,7 @@
             this.button4.TabIndex = 2;
             this.button4.Text = "접수대기";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // panel1
             // 
@@ -817,6 +616,171 @@
             this.printPreviewDialog1.Visible = false;
             this.printPreviewDialog1.Load += new System.EventHandler(this.printPreviewDialog1_Load);
             // 
+            // label1_5
+            // 
+            this.label1_5.AutoSize = true;
+            this.label1_5.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1_5.Location = new System.Drawing.Point(403, 15);
+            this.label1_5.Name = "label1_5";
+            this.label1_5.Size = new System.Drawing.Size(18, 19);
+            this.label1_5.TabIndex = 8;
+            this.label1_5.Text = "-";
+            this.label1_5.Visible = false;
+            // 
+            // label2_5
+            // 
+            this.label2_5.AutoSize = true;
+            this.label2_5.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2_5.Location = new System.Drawing.Point(403, 15);
+            this.label2_5.Name = "label2_5";
+            this.label2_5.Size = new System.Drawing.Size(18, 19);
+            this.label2_5.TabIndex = 9;
+            this.label2_5.Text = "-";
+            this.label2_5.Visible = false;
+            // 
+            // label3_5
+            // 
+            this.label3_5.AutoSize = true;
+            this.label3_5.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3_5.Location = new System.Drawing.Point(403, 15);
+            this.label3_5.Name = "label3_5";
+            this.label3_5.Size = new System.Drawing.Size(18, 19);
+            this.label3_5.TabIndex = 9;
+            this.label3_5.Text = "-";
+            this.label3_5.Visible = false;
+            // 
+            // label4_5
+            // 
+            this.label4_5.AutoSize = true;
+            this.label4_5.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label4_5.Location = new System.Drawing.Point(403, 15);
+            this.label4_5.Name = "label4_5";
+            this.label4_5.Size = new System.Drawing.Size(18, 19);
+            this.label4_5.TabIndex = 9;
+            this.label4_5.Text = "-";
+            this.label4_5.Visible = false;
+            // 
+            // label5_5
+            // 
+            this.label5_5.AutoSize = true;
+            this.label5_5.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label5_5.Location = new System.Drawing.Point(403, 25);
+            this.label5_5.Name = "label5_5";
+            this.label5_5.Size = new System.Drawing.Size(18, 19);
+            this.label5_5.TabIndex = 9;
+            this.label5_5.Text = "-";
+            this.label5_5.Visible = false;
+            // 
+            // label1_6
+            // 
+            this.label1_6.AutoSize = true;
+            this.label1_6.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1_6.Location = new System.Drawing.Point(403, 34);
+            this.label1_6.Name = "label1_6";
+            this.label1_6.Size = new System.Drawing.Size(18, 19);
+            this.label1_6.TabIndex = 9;
+            this.label1_6.Text = "-";
+            this.label1_6.Visible = false;
+            // 
+            // label1_7
+            // 
+            this.label1_7.AutoSize = true;
+            this.label1_7.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1_7.Location = new System.Drawing.Point(403, 53);
+            this.label1_7.Name = "label1_7";
+            this.label1_7.Size = new System.Drawing.Size(18, 19);
+            this.label1_7.TabIndex = 10;
+            this.label1_7.Text = "-";
+            this.label1_7.Visible = false;
+            // 
+            // label2_6
+            // 
+            this.label2_6.AutoSize = true;
+            this.label2_6.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2_6.Location = new System.Drawing.Point(403, 34);
+            this.label2_6.Name = "label2_6";
+            this.label2_6.Size = new System.Drawing.Size(18, 19);
+            this.label2_6.TabIndex = 10;
+            this.label2_6.Text = "-";
+            this.label2_6.Visible = false;
+            // 
+            // label2_7
+            // 
+            this.label2_7.AutoSize = true;
+            this.label2_7.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2_7.Location = new System.Drawing.Point(403, 53);
+            this.label2_7.Name = "label2_7";
+            this.label2_7.Size = new System.Drawing.Size(18, 19);
+            this.label2_7.TabIndex = 11;
+            this.label2_7.Text = "-";
+            this.label2_7.Visible = false;
+            // 
+            // label3_6
+            // 
+            this.label3_6.AutoSize = true;
+            this.label3_6.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3_6.Location = new System.Drawing.Point(403, 34);
+            this.label3_6.Name = "label3_6";
+            this.label3_6.Size = new System.Drawing.Size(18, 19);
+            this.label3_6.TabIndex = 10;
+            this.label3_6.Text = "-";
+            this.label3_6.Visible = false;
+            // 
+            // label3_7
+            // 
+            this.label3_7.AutoSize = true;
+            this.label3_7.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3_7.Location = new System.Drawing.Point(403, 53);
+            this.label3_7.Name = "label3_7";
+            this.label3_7.Size = new System.Drawing.Size(18, 19);
+            this.label3_7.TabIndex = 11;
+            this.label3_7.Text = "-";
+            this.label3_7.Visible = false;
+            // 
+            // label4_6
+            // 
+            this.label4_6.AutoSize = true;
+            this.label4_6.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label4_6.Location = new System.Drawing.Point(403, 34);
+            this.label4_6.Name = "label4_6";
+            this.label4_6.Size = new System.Drawing.Size(18, 19);
+            this.label4_6.TabIndex = 10;
+            this.label4_6.Text = "-";
+            this.label4_6.Visible = false;
+            // 
+            // label4_7
+            // 
+            this.label4_7.AutoSize = true;
+            this.label4_7.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label4_7.Location = new System.Drawing.Point(403, 57);
+            this.label4_7.Name = "label4_7";
+            this.label4_7.Size = new System.Drawing.Size(18, 19);
+            this.label4_7.TabIndex = 11;
+            this.label4_7.Text = "-";
+            this.label4_7.Visible = false;
+            // 
+            // label5_6
+            // 
+            this.label5_6.AutoSize = true;
+            this.label5_6.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label5_6.Location = new System.Drawing.Point(403, 46);
+            this.label5_6.Name = "label5_6";
+            this.label5_6.Size = new System.Drawing.Size(18, 19);
+            this.label5_6.TabIndex = 10;
+            this.label5_6.Text = "-";
+            this.label5_6.Visible = false;
+            // 
+            // label5_7
+            // 
+            this.label5_7.AutoSize = true;
+            this.label5_7.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label5_7.Location = new System.Drawing.Point(403, 65);
+            this.label5_7.Name = "label5_7";
+            this.label5_7.Size = new System.Drawing.Size(18, 19);
+            this.label5_7.TabIndex = 11;
+            this.label5_7.Text = "-";
+            this.label5_7.Visible = false;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -833,14 +797,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             this.panel11.ResumeLayout(false);
@@ -851,6 +807,7 @@
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -861,52 +818,6 @@
         #endregion
 
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label9_2;
-        private System.Windows.Forms.Label label9_4;
-        private System.Windows.Forms.Label label9_3;
-        private System.Windows.Forms.Label label9_1;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label8_2;
-        private System.Windows.Forms.Label label8_4;
-        private System.Windows.Forms.Label label8_3;
-        private System.Windows.Forms.Label label8_1;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Label label7_2;
-        private System.Windows.Forms.Label label7_4;
-        private System.Windows.Forms.Label label7_3;
-        private System.Windows.Forms.Label label7_1;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label label6_2;
-        private System.Windows.Forms.Label label6_4;
-        private System.Windows.Forms.Label label6_3;
-        private System.Windows.Forms.Label label6_1;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Label label5_2;
-        private System.Windows.Forms.Label label5_4;
-        private System.Windows.Forms.Label label5_3;
-        private System.Windows.Forms.Label label5_1;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Label label4_2;
-        private System.Windows.Forms.Label label4_4;
-        private System.Windows.Forms.Label label4_3;
-        private System.Windows.Forms.Label label4_1;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Label label3_2;
-        private System.Windows.Forms.Label label3_4;
-        private System.Windows.Forms.Label label3_3;
-        private System.Windows.Forms.Label label3_1;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label2_2;
-        private System.Windows.Forms.Label label2_4;
-        private System.Windows.Forms.Label label2_3;
-        private System.Windows.Forms.Label label2_1;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label1_2;
-        private System.Windows.Forms.Label label1_4;
-        private System.Windows.Forms.Label label1_3;
-        private System.Windows.Forms.Label label1_1;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
@@ -921,5 +832,47 @@
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.PrintDialog printDialog1;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label1_2;
+        private System.Windows.Forms.Label label1_4;
+        private System.Windows.Forms.Label label1_3;
+        private System.Windows.Forms.Label label1_1;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label2_2;
+        private System.Windows.Forms.Label label2_4;
+        private System.Windows.Forms.Label label2_3;
+        private System.Windows.Forms.Label label2_1;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Label label3_2;
+        private System.Windows.Forms.Label label3_4;
+        private System.Windows.Forms.Label label3_3;
+        private System.Windows.Forms.Label label3_1;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Label label5_2;
+        private System.Windows.Forms.Label label5_4;
+        private System.Windows.Forms.Label label5_3;
+        private System.Windows.Forms.Label label5_1;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Label label4_2;
+        private System.Windows.Forms.Label label4_4;
+        private System.Windows.Forms.Label label4_3;
+        private System.Windows.Forms.Label label4_1;
+        private System.Windows.Forms.Label label5_5;
+        private System.Windows.Forms.Label label4_5;
+        private System.Windows.Forms.Label label3_5;
+        private System.Windows.Forms.Label label2_5;
+        private System.Windows.Forms.Label label1_5;
+        private System.Windows.Forms.Label label1_7;
+        private System.Windows.Forms.Label label1_6;
+        private System.Windows.Forms.Label label5_7;
+        private System.Windows.Forms.Label label5_6;
+        private System.Windows.Forms.Label label4_7;
+        private System.Windows.Forms.Label label4_6;
+        private System.Windows.Forms.Label label3_7;
+        private System.Windows.Forms.Label label3_6;
+        private System.Windows.Forms.Label label2_7;
+        private System.Windows.Forms.Label label2_6;
     }
 }
