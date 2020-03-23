@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{226CAC1C-DA73-4575-9EA3-AA8E1E03F423}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ook_pos_program</RootNamespace>
+    <AssemblyName>ook_pos_program</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\Downloads\mysql-connector-net-8.0.18-noinstall\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adapter.cs" />
+    <Compile Include="confirm_order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="confirm_order.Designer.cs">
+      <DependentUpon>confirm_order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="File_test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="File_test.Designer.cs">
+      <DependentUpon>File_test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="panel_click.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="panel_click.Designer.cs">
+      <DependentUpon>panel_click.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2-2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2-2.Designer.cs">
+      <DependentUpon>Form2-2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_PayCash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_PayCash.Designer.cs">
+      <DependentUpon>Form_PayCash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IOS_Order.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IOS_Order.Designer.cs">
+      <DependentUpon>IOS_Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="order.cs" />
+    <Compile Include="orderPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="orderPanel.Designer.cs">
+      <DependentUpon>orderPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="order_large.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="order_large.Designer.cs">
+      <DependentUpon>order_large.cs</DependentUpon>
+    </Compile>
+    <Compile Include="order_medium.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="order_medium.Designer.cs">
+      <DependentUpon>order_medium.cs</DependentUpon>
+    </Compile>
+    <Compile Include="order_small.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="order_small.Designer.cs">
+      <DependentUpon>order_small.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="saleForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="saleForm1.Designer.cs">
+      <DependentUpon>saleForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="saleForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="saleForm2.Designer.cs">
+      <DependentUpon>saleForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="saleForm3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="saleForm3.Designer.cs">
+      <DependentUpon>saleForm3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="saleForm4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="saleForm4.Designer.cs">
+      <DependentUpon>saleForm4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="salesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="salesForm.Designer.cs">
+      <DependentUpon>salesForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="confirm_order.resx">
+      <DependentUpon>confirm_order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="File_test.resx">
+      <DependentUpon>File_test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panel_click.resx">
+      <DependentUpon>panel_click.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2-2.resx">
+      <DependentUpon>Form2-2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_PayCash.resx">
+      <DependentUpon>Form_PayCash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IOS_Order.resx">
+      <DependentUpon>IOS_Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orderPanel.resx">
+      <DependentUpon>orderPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="order_large.resx">
+      <DependentUpon>order_large.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="order_medium.resx">
+      <DependentUpon>order_medium.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="order_small.resx">
+      <DependentUpon>order_small.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="saleForm1.resx">
+      <DependentUpon>saleForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="saleForm2.resx">
+      <DependentUpon>saleForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="saleForm3.resx">
+      <DependentUpon>saleForm3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="saleForm4.resx">
+      <DependentUpon>saleForm4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="salesForm.resx">
+      <DependentUpon>salesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\판매관리.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

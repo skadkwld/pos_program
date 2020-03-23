@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ook_pos_program", "pos_program\ook_pos_program.csproj", "{226CAC1C-DA73-4575-9EA3-AA8E1E03F423}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{226CAC1C-DA73-4575-9EA3-AA8E1E03F423}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{226CAC1C-DA73-4575-9EA3-AA8E1E03F423}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{226CAC1C-DA73-4575-9EA3-AA8E1E03F423}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{226CAC1C-DA73-4575-9EA3-AA8E1E03F423}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23F95FF5-CDEC-4ADD-A9FE-9C9CDE14783E}
+	EndGlobalSection
+EndGlobal
