@@ -7,15 +7,18 @@
 - 추가로 기본적인 포스기 기능 구현  
 
 ## 시연  
-#### 로그인 화면 
+#### 1.로그인 화면 
   
 ![로그인](https://user-images.githubusercontent.com/49936855/78551921-805ce380-7841-11ea-9a47-92f26a2b12a4.PNG)
 
-#### 메뉴화면  
+#### 2.메뉴화면  
 
 ![메뉴화면](https://user-images.githubusercontent.com/49936855/78552161-f3665a00-7841-11ea-91ee-a44dd3e375a0.PNG)
 
-#### 판매관리  
+#### 3.판매관리  
 
 ![판매관리 화면](https://user-images.githubusercontent.com/49936855/78552247-1c86ea80-7842-11ea-969a-f74c67d7fc1c.PNG)
 
+#### 4.어플에서 주문 들어옴(팝업창)
+
+![주문 들어옴](https://user-images.githubusercontent.com/49936855/78552358-548e2d80-7842-11ea-9f8d-8dd93a05cf7a.PNG)
