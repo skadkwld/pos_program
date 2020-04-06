@@ -7,13 +7,10 @@
 - 추가로 기본적인 포스기 기능 구현  
 
 ## 시연  
-#### 1. 로그인 화면 
+#### 1. 로그인,메뉴 화면 
   
-![로그인](https://user-images.githubusercontent.com/49936855/78551921-805ce380-7841-11ea-9a47-92f26a2b12a4.PNG)
 
-#### 2. 메뉴화면  
 
-![메뉴화면](https://user-images.githubusercontent.com/49936855/78552161-f3665a00-7841-11ea-91ee-a44dd3e375a0.PNG)
 
 #### 3. 판매관리  
 
