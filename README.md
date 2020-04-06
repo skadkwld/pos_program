@@ -20,6 +20,8 @@
 
 ![주문 들어옴](https://user-images.githubusercontent.com/49936855/78552358-548e2d80-7842-11ea-9f8d-8dd93a05cf7a.PNG)
 
-#### 5. 팝업창 클릭시
-
-![알림클릭시](https://user-images.githubusercontent.com/49936855/78552725-fa419c80-7842-11ea-8469-d2e913a20d3e.PNG)
+#### 5. 팝업창 클릭 후 과정
+1. panel 클릭  
+2. 메뉴 확인후 주문접수 클릭(app으로 '주문이 접수되었습니다' 알림보냄)
+3. 준비중 화면에서 메뉴완성, 주문접수 클릭(app으로 알림보냄)
+![접수대기,주문접수,준비중](https://user-images.githubusercontent.com/49936855/78555118-50184380-7847-11ea-8219-96f2d3a9d7e9.jpg)
