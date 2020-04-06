@@ -14,3 +14,8 @@
 #### 메뉴화면  
 
 ![메뉴화면](https://user-images.githubusercontent.com/49936855/78552161-f3665a00-7841-11ea-91ee-a44dd3e375a0.PNG)
+
+#### 판매관리  
+
+![판매관리 화면](https://user-images.githubusercontent.com/49936855/78552247-1c86ea80-7842-11ea-969a-f74c67d7fc1c.PNG)
+
