@@ -24,4 +24,5 @@
 1. panel 클릭    
 ![팬널클릭](https://user-images.githubusercontent.com/49936855/78552894-4a206380-7843-11ea-8601-82663c1a552c.PNG)
 2. 메뉴 확인후 주문접수 클릭(app으로 '주문이 접수되었습니다' 알림보냄)
+![팬널클릭](https://user-images.githubusercontent.com/49936855/78552894-4a206380-7843-11ea-8601-82663c1a552c.PNG)
 3. 준비중 화면에서 메뉴완성, 주문접수 클릭(app으로 알림보냄)
