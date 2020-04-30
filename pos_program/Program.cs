@@ -16,8 +16,8 @@ namespace ook_pos_program
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Form1());
-            Application.Run(new confirm_order());
+            Application.Run(new Form2());
+            //Application.Run(new confirm_order());
         }
     }
 }

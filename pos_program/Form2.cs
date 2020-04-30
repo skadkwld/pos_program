@@ -199,7 +199,7 @@ namespace ook_pos_program
 
                 panel2.Visible = false;
                 panel1.Visible = true;
-                MessageBox.Show("로그인 성공");
+                //MessageBox.Show("로그인 성공");
             }
             else
             {

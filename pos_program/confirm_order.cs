@@ -21,16 +21,17 @@ namespace ook_pos_program
     {
         SoundPlayer sp = new SoundPlayer();
         string file = (string)@"C:\주문이 접수되었습니다.wav";
-        string strconn = string.Format(@"server=localhost;database=kiosk;user=root;password=1234");
+        //string strconn = string.Format(@"server=localhost;database=kiosk;user=root;password=1234");
         string ing = "ING..";
         string t = "T";
         string f = "F";
         int rowNum = 0;
-       // string strconn = string.Format(@"server=mydb.cmkvwrcpwpyc.ap-northeast-2.rds.amazonaws.com;database=ook;user=admin;password=young1700!");
+        string strconn = string.Format(@"server=mydb.cmkvwrcpwpyc.ap-northeast-2.rds.amazonaws.com;database=ook;user=admin;password=young1700!");
         order order = new order();
         adapter ad = new adapter();
         DataTable dt=null;
         MySqlConnection conn;
+        MySqlCommand cmd;
         string[,] arr_for_insert = new string[10, 5];
         int rowCount = 0;
         string docName = "test.txt";
@@ -833,15 +834,50 @@ namespace ook_pos_program
 
         private void button4_Click(object sender, EventArgs e)
         {
-            get_toket();
-        }
+            get_toket(1);
 
-        public void get_toket()
+        } //주문표 인쇄, 주문하신 메뉴가 나왔습니다
+
+        private void button18_Click(object sender, EventArgs e)
         {
+            string update_sql = "update orderMenu set confirmed="+"'T' where currentDate='#Date'";
+            string date = Convert.ToDateTime(label1_8.Text).ToString("yyyy-MM-dd HH:mm:ss");
+            conn = new MySqlConnection(strconn);
+
+            conn.Open();
+
+            update_sql = update_sql.Replace("#Date", date);
+
+            cmd = new MySqlCommand(update_sql, conn);
+            cmd.ExecuteNonQuery();
+
+            get_toket(2);
+
+        } //음식수령
+
+        public void get_toket(int sig1_or_sig2)
+        {
+            string message = string.Empty;
             string token = string.Empty;
+            string date = string.Empty;
             string sql =
         "select token from orderMenu where currentDate = '#Date'";
-            sql = sql.Replace("#Date", label1_8.Text);
+            date = Convert.ToDateTime(label1_8.Text).ToString("yyyy-MM-dd HH:mm:ss");
+            sql = sql.Replace("#Date", date);
+
+            conn = new MySqlConnection(strconn);
+
+            if (sig1_or_sig2 == 1)
+            {
+                message = "주문하신 메뉴가 나왔습니다";
+             }
+
+            else if(sig1_or_sig2==2)
+            {
+                message = "음식을 수령하셨습니다";
+
+            }
+
             MySqlCommand cmd = new MySqlCommand(sql, conn);
             try
             {
@@ -854,19 +890,19 @@ namespace ook_pos_program
             }
 
             //MessageBox.Show(token);
-            sendRequestAsync(token);
+            sendRequestAsync(token,message);
             conn.Close();
 
         }
 
-        public async Task sendRequestAsync(string token)
+        public async Task sendRequestAsync(string token,string message)
         {
             string url = "http://ec2-13-124-57-226.ap-northeast-2.compute.amazonaws.com/pushNotification/pushNotification.php";
             HttpClient client = new HttpClient();
             
             Dictionary<string, string> values = new Dictionary<string, string>
             {
-                {"token",token },{"Message","주문하신 메뉴가 나왔습니다."}
+                {"token",token },{"Message",message }
             };
             FormUrlEncodedContent content = new FormUrlEncodedContent(values);
             var response = await client.PostAsync(url, content);
@@ -878,5 +914,17 @@ namespace ook_pos_program
         {
 
         }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }

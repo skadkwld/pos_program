@@ -44,9 +44,10 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.button25 = new System.Windows.Forms.Button();
+            this.button26 = new System.Windows.Forms.Button();
             this.label9_3_1 = new System.Windows.Forms.Label();
             this.label9_8 = new System.Windows.Forms.Label();
-            this.button15 = new System.Windows.Forms.Button();
             this.label9_7 = new System.Windows.Forms.Label();
             this.label9_6 = new System.Windows.Forms.Label();
             this.label9_5 = new System.Windows.Forms.Label();
@@ -55,9 +56,10 @@
             this.label9_3 = new System.Windows.Forms.Label();
             this.label9_1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.button23 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
             this.label8_3_1 = new System.Windows.Forms.Label();
             this.label8_8 = new System.Windows.Forms.Label();
-            this.button14 = new System.Windows.Forms.Button();
             this.label8_7 = new System.Windows.Forms.Label();
             this.label8_6 = new System.Windows.Forms.Label();
             this.label8_5 = new System.Windows.Forms.Label();
@@ -66,9 +68,10 @@
             this.label8_3 = new System.Windows.Forms.Label();
             this.label8_1 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
             this.label7_3_1 = new System.Windows.Forms.Label();
             this.label7_8 = new System.Windows.Forms.Label();
-            this.button13 = new System.Windows.Forms.Button();
             this.label7_7 = new System.Windows.Forms.Label();
             this.label7_6 = new System.Windows.Forms.Label();
             this.label7_5 = new System.Windows.Forms.Label();
@@ -77,9 +80,10 @@
             this.label7_3 = new System.Windows.Forms.Label();
             this.label7_1 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
             this.label6_3_1 = new System.Windows.Forms.Label();
             this.label6_8 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.label6_7 = new System.Windows.Forms.Label();
             this.label6_6 = new System.Windows.Forms.Label();
@@ -89,9 +93,10 @@
             this.label6_3 = new System.Windows.Forms.Label();
             this.label6_1 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
             this.label5_3_1 = new System.Windows.Forms.Label();
             this.label5_8 = new System.Windows.Forms.Label();
-            this.button11 = new System.Windows.Forms.Button();
             this.label5_7 = new System.Windows.Forms.Label();
             this.label5_6 = new System.Windows.Forms.Label();
             this.label5_5 = new System.Windows.Forms.Label();
@@ -100,9 +105,10 @@
             this.label5_3 = new System.Windows.Forms.Label();
             this.label5_1 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
             this.label4_3_1 = new System.Windows.Forms.Label();
             this.label4_8 = new System.Windows.Forms.Label();
-            this.button10 = new System.Windows.Forms.Button();
             this.label4_7 = new System.Windows.Forms.Label();
             this.label4_6 = new System.Windows.Forms.Label();
             this.label4_5 = new System.Windows.Forms.Label();
@@ -111,9 +117,10 @@
             this.label4_3 = new System.Windows.Forms.Label();
             this.label4_1 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
             this.label3_3_1 = new System.Windows.Forms.Label();
             this.label3_8 = new System.Windows.Forms.Label();
-            this.button9 = new System.Windows.Forms.Button();
             this.label3_7 = new System.Windows.Forms.Label();
             this.label3_6 = new System.Windows.Forms.Label();
             this.label3_5 = new System.Windows.Forms.Label();
@@ -122,9 +129,10 @@
             this.label3_3 = new System.Windows.Forms.Label();
             this.label3_1 = new System.Windows.Forms.Label();
             this.panel5_1 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.label2_3_1 = new System.Windows.Forms.Label();
             this.label2_8 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
             this.label2_7 = new System.Windows.Forms.Label();
             this.label2_6 = new System.Windows.Forms.Label();
             this.label2_5 = new System.Windows.Forms.Label();
@@ -135,6 +143,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1_3_1 = new System.Windows.Forms.Label();
             this.label1_8 = new System.Windows.Forms.Label();
+            this.button18 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.label1_7 = new System.Windows.Forms.Label();
             this.label1_6 = new System.Windows.Forms.Label();
@@ -329,9 +338,10 @@
             // 
             this.panel7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel7.Controls.Add(this.button25);
+            this.panel7.Controls.Add(this.button26);
             this.panel7.Controls.Add(this.label9_3_1);
             this.panel7.Controls.Add(this.label9_8);
-            this.panel7.Controls.Add(this.button15);
             this.panel7.Controls.Add(this.label9_7);
             this.panel7.Controls.Add(this.label9_6);
             this.panel7.Controls.Add(this.label9_5);
@@ -346,6 +356,30 @@
             this.panel7.TabIndex = 43;
             this.panel7.Visible = false;
             this.panel7.Click += new System.EventHandler(this.panel7_Click);
+            // 
+            // button25
+            // 
+            this.button25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button25.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button25.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button25.Location = new System.Drawing.Point(470, 53);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(106, 32);
+            this.button25.TabIndex = 18;
+            this.button25.Text = "음식수령";
+            this.button25.UseVisualStyleBackColor = false;
+            // 
+            // button26
+            // 
+            this.button26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button26.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button26.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button26.Location = new System.Drawing.Point(470, 15);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(106, 32);
+            this.button26.TabIndex = 19;
+            this.button26.Text = "주문표 인쇄";
+            this.button26.UseVisualStyleBackColor = false;
             // 
             // label9_3_1
             // 
@@ -370,18 +404,6 @@
             this.label9_8.TabIndex = 16;
             this.label9_8.Text = "-";
             this.label9_8.Visible = false;
-            // 
-            // button15
-            // 
-            this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button15.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button15.Location = new System.Drawing.Point(507, 15);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(69, 71);
-            this.button15.TabIndex = 15;
-            this.button15.Text = "주문표 인쇄";
-            this.button15.UseVisualStyleBackColor = false;
             // 
             // label9_7
             // 
@@ -462,9 +484,10 @@
             // 
             this.panel6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.button23);
+            this.panel6.Controls.Add(this.button24);
             this.panel6.Controls.Add(this.label8_3_1);
             this.panel6.Controls.Add(this.label8_8);
-            this.panel6.Controls.Add(this.button14);
             this.panel6.Controls.Add(this.label8_7);
             this.panel6.Controls.Add(this.label8_6);
             this.panel6.Controls.Add(this.label8_5);
@@ -479,6 +502,30 @@
             this.panel6.TabIndex = 42;
             this.panel6.Visible = false;
             this.panel6.Click += new System.EventHandler(this.panel6_Click);
+            // 
+            // button23
+            // 
+            this.button23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button23.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button23.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button23.Location = new System.Drawing.Point(470, 53);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(106, 32);
+            this.button23.TabIndex = 18;
+            this.button23.Text = "음식수령";
+            this.button23.UseVisualStyleBackColor = false;
+            // 
+            // button24
+            // 
+            this.button24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button24.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button24.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button24.Location = new System.Drawing.Point(470, 15);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(106, 32);
+            this.button24.TabIndex = 19;
+            this.button24.Text = "메뉴완성";
+            this.button24.UseVisualStyleBackColor = false;
             // 
             // label8_3_1
             // 
@@ -503,18 +550,6 @@
             this.label8_8.TabIndex = 16;
             this.label8_8.Text = "-";
             this.label8_8.Visible = false;
-            // 
-            // button14
-            // 
-            this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button14.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button14.Location = new System.Drawing.Point(507, 15);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(69, 71);
-            this.button14.TabIndex = 15;
-            this.button14.Text = "주문표 인쇄";
-            this.button14.UseVisualStyleBackColor = false;
             // 
             // label8_7
             // 
@@ -595,9 +630,10 @@
             // 
             this.panel8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel8.Controls.Add(this.button21);
+            this.panel8.Controls.Add(this.button22);
             this.panel8.Controls.Add(this.label7_3_1);
             this.panel8.Controls.Add(this.label7_8);
-            this.panel8.Controls.Add(this.button13);
             this.panel8.Controls.Add(this.label7_7);
             this.panel8.Controls.Add(this.label7_6);
             this.panel8.Controls.Add(this.label7_5);
@@ -612,6 +648,30 @@
             this.panel8.TabIndex = 41;
             this.panel8.Visible = false;
             this.panel8.Click += new System.EventHandler(this.panel8_Click);
+            // 
+            // button21
+            // 
+            this.button21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button21.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button21.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button21.Location = new System.Drawing.Point(470, 53);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(106, 32);
+            this.button21.TabIndex = 18;
+            this.button21.Text = "음식수령";
+            this.button21.UseVisualStyleBackColor = false;
+            // 
+            // button22
+            // 
+            this.button22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button22.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button22.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button22.Location = new System.Drawing.Point(470, 15);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(106, 32);
+            this.button22.TabIndex = 19;
+            this.button22.Text = "메뉴완성";
+            this.button22.UseVisualStyleBackColor = false;
             // 
             // label7_3_1
             // 
@@ -636,18 +696,6 @@
             this.label7_8.TabIndex = 16;
             this.label7_8.Text = "-";
             this.label7_8.Visible = false;
-            // 
-            // button13
-            // 
-            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button13.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button13.Location = new System.Drawing.Point(507, 15);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(69, 71);
-            this.button13.TabIndex = 15;
-            this.button13.Text = "주문표 인쇄";
-            this.button13.UseVisualStyleBackColor = false;
             // 
             // label7_7
             // 
@@ -728,9 +776,10 @@
             // 
             this.panel9.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel9.Controls.Add(this.button19);
+            this.panel9.Controls.Add(this.button20);
             this.panel9.Controls.Add(this.label6_3_1);
             this.panel9.Controls.Add(this.label6_8);
-            this.panel9.Controls.Add(this.button7);
             this.panel9.Controls.Add(this.button12);
             this.panel9.Controls.Add(this.label6_7);
             this.panel9.Controls.Add(this.label6_6);
@@ -746,6 +795,30 @@
             this.panel9.TabIndex = 40;
             this.panel9.Visible = false;
             this.panel9.Click += new System.EventHandler(this.panel9_Click);
+            // 
+            // button19
+            // 
+            this.button19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button19.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button19.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button19.Location = new System.Drawing.Point(470, 53);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(106, 32);
+            this.button19.TabIndex = 18;
+            this.button19.Text = "음식수령";
+            this.button19.UseVisualStyleBackColor = false;
+            // 
+            // button20
+            // 
+            this.button20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button20.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button20.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button20.Location = new System.Drawing.Point(470, 15);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(106, 32);
+            this.button20.TabIndex = 19;
+            this.button20.Text = "메뉴완성";
+            this.button20.UseVisualStyleBackColor = false;
             // 
             // label6_3_1
             // 
@@ -770,18 +843,6 @@
             this.label6_8.TabIndex = 16;
             this.label6_8.Text = "-";
             this.label6_8.Visible = false;
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button7.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button7.Location = new System.Drawing.Point(507, 15);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(69, 71);
-            this.button7.TabIndex = 15;
-            this.button7.Text = "주문표 인쇄";
-            this.button7.UseVisualStyleBackColor = false;
             // 
             // button12
             // 
@@ -874,9 +935,10 @@
             // 
             this.panel10.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel10.Controls.Add(this.button14);
+            this.panel10.Controls.Add(this.button15);
             this.panel10.Controls.Add(this.label5_3_1);
             this.panel10.Controls.Add(this.label5_8);
-            this.panel10.Controls.Add(this.button11);
             this.panel10.Controls.Add(this.label5_7);
             this.panel10.Controls.Add(this.label5_6);
             this.panel10.Controls.Add(this.label5_5);
@@ -891,6 +953,30 @@
             this.panel10.TabIndex = 39;
             this.panel10.Visible = false;
             this.panel10.Click += new System.EventHandler(this.panel10_Click);
+            // 
+            // button14
+            // 
+            this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button14.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button14.Location = new System.Drawing.Point(470, 53);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(106, 32);
+            this.button14.TabIndex = 18;
+            this.button14.Text = "음식수령";
+            this.button14.UseVisualStyleBackColor = false;
+            // 
+            // button15
+            // 
+            this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button15.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button15.Location = new System.Drawing.Point(470, 15);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(106, 32);
+            this.button15.TabIndex = 19;
+            this.button15.Text = "메뉴완성";
+            this.button15.UseVisualStyleBackColor = false;
             // 
             // label5_3_1
             // 
@@ -915,18 +1001,6 @@
             this.label5_8.TabIndex = 16;
             this.label5_8.Text = "-";
             this.label5_8.Visible = false;
-            // 
-            // button11
-            // 
-            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button11.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button11.Location = new System.Drawing.Point(507, 15);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(69, 71);
-            this.button11.TabIndex = 15;
-            this.button11.Text = "주문표 인쇄";
-            this.button11.UseVisualStyleBackColor = false;
             // 
             // label5_7
             // 
@@ -1007,9 +1081,10 @@
             // 
             this.panel11.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel11.Controls.Add(this.button11);
+            this.panel11.Controls.Add(this.button13);
             this.panel11.Controls.Add(this.label4_3_1);
             this.panel11.Controls.Add(this.label4_8);
-            this.panel11.Controls.Add(this.button10);
             this.panel11.Controls.Add(this.label4_7);
             this.panel11.Controls.Add(this.label4_6);
             this.panel11.Controls.Add(this.label4_5);
@@ -1024,6 +1099,30 @@
             this.panel11.TabIndex = 38;
             this.panel11.Visible = false;
             this.panel11.Click += new System.EventHandler(this.panel11_Click);
+            // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button11.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button11.Location = new System.Drawing.Point(470, 53);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(106, 32);
+            this.button11.TabIndex = 18;
+            this.button11.Text = "음식수령";
+            this.button11.UseVisualStyleBackColor = false;
+            // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button13.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button13.Location = new System.Drawing.Point(470, 15);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(106, 32);
+            this.button13.TabIndex = 19;
+            this.button13.Text = "메뉴완성";
+            this.button13.UseVisualStyleBackColor = false;
             // 
             // label4_3_1
             // 
@@ -1048,18 +1147,6 @@
             this.label4_8.TabIndex = 16;
             this.label4_8.Text = "-";
             this.label4_8.Visible = false;
-            // 
-            // button10
-            // 
-            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button10.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button10.Location = new System.Drawing.Point(507, 15);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(69, 71);
-            this.button10.TabIndex = 15;
-            this.button10.Text = "주문표 인쇄";
-            this.button10.UseVisualStyleBackColor = false;
             // 
             // label4_7
             // 
@@ -1140,9 +1227,10 @@
             // 
             this.panel12.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel12.Controls.Add(this.button9);
+            this.panel12.Controls.Add(this.button10);
             this.panel12.Controls.Add(this.label3_3_1);
             this.panel12.Controls.Add(this.label3_8);
-            this.panel12.Controls.Add(this.button9);
             this.panel12.Controls.Add(this.label3_7);
             this.panel12.Controls.Add(this.label3_6);
             this.panel12.Controls.Add(this.label3_5);
@@ -1157,6 +1245,30 @@
             this.panel12.TabIndex = 37;
             this.panel12.Visible = false;
             this.panel12.Click += new System.EventHandler(this.panel12_Click);
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button9.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button9.Location = new System.Drawing.Point(470, 53);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(106, 32);
+            this.button9.TabIndex = 18;
+            this.button9.Text = "음식수령";
+            this.button9.UseVisualStyleBackColor = false;
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button10.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button10.Location = new System.Drawing.Point(470, 15);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(106, 32);
+            this.button10.TabIndex = 19;
+            this.button10.Text = "메뉴완성";
+            this.button10.UseVisualStyleBackColor = false;
             // 
             // label3_3_1
             // 
@@ -1181,18 +1293,6 @@
             this.label3_8.TabIndex = 16;
             this.label3_8.Text = "-";
             this.label3_8.Visible = false;
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button9.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button9.Location = new System.Drawing.Point(507, 15);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(69, 71);
-            this.button9.TabIndex = 15;
-            this.button9.Text = "주문표 인쇄";
-            this.button9.UseVisualStyleBackColor = false;
             // 
             // label3_7
             // 
@@ -1273,9 +1373,10 @@
             // 
             this.panel5_1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel5_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5_1.Controls.Add(this.button5);
+            this.panel5_1.Controls.Add(this.button7);
             this.panel5_1.Controls.Add(this.label2_3_1);
             this.panel5_1.Controls.Add(this.label2_8);
-            this.panel5_1.Controls.Add(this.button5);
             this.panel5_1.Controls.Add(this.label2_7);
             this.panel5_1.Controls.Add(this.label2_6);
             this.panel5_1.Controls.Add(this.label2_5);
@@ -1290,6 +1391,30 @@
             this.panel5_1.TabIndex = 36;
             this.panel5_1.Visible = false;
             this.panel5_1.Click += new System.EventHandler(this.panel5_1_Click);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button5.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button5.Location = new System.Drawing.Point(470, 53);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(106, 32);
+            this.button5.TabIndex = 18;
+            this.button5.Text = "음식수령";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button7.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button7.Location = new System.Drawing.Point(470, 15);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(106, 32);
+            this.button7.TabIndex = 19;
+            this.button7.Text = "메뉴완성";
+            this.button7.UseVisualStyleBackColor = false;
             // 
             // label2_3_1
             // 
@@ -1314,18 +1439,6 @@
             this.label2_8.TabIndex = 16;
             this.label2_8.Text = "-";
             this.label2_8.Visible = false;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button5.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button5.Location = new System.Drawing.Point(507, 15);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(69, 71);
-            this.button5.TabIndex = 15;
-            this.button5.Text = "주문표 인쇄";
-            this.button5.UseVisualStyleBackColor = false;
             // 
             // label2_7
             // 
@@ -1408,6 +1521,7 @@
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.label1_3_1);
             this.panel4.Controls.Add(this.label1_8);
+            this.panel4.Controls.Add(this.button18);
             this.panel4.Controls.Add(this.button4);
             this.panel4.Controls.Add(this.label1_7);
             this.panel4.Controls.Add(this.label1_6);
@@ -1423,6 +1537,7 @@
             this.panel4.TabIndex = 35;
             this.panel4.Visible = false;
             this.panel4.Click += new System.EventHandler(this.panel4_Click);
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // label1_3_1
             // 
@@ -1448,16 +1563,29 @@
             this.label1_8.Text = "-";
             this.label1_8.Visible = false;
             // 
+            // button18
+            // 
+            this.button18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button18.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button18.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button18.Location = new System.Drawing.Point(470, 53);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(106, 32);
+            this.button18.TabIndex = 14;
+            this.button18.Text = "음식수령";
+            this.button18.UseVisualStyleBackColor = false;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
+            // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button4.Font = new System.Drawing.Font("한컴산뜻돋움", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button4.Location = new System.Drawing.Point(507, 15);
+            this.button4.Location = new System.Drawing.Point(470, 15);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(69, 71);
+            this.button4.Size = new System.Drawing.Size(106, 32);
             this.button4.TabIndex = 14;
-            this.button4.Text = "주문표 인쇄";
+            this.button4.Text = "메뉴완성";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -1631,7 +1759,6 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label9_8;
-        private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Label label9_7;
         private System.Windows.Forms.Label label9_6;
         private System.Windows.Forms.Label label9_5;
@@ -1641,7 +1768,6 @@
         private System.Windows.Forms.Label label9_1;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label8_8;
-        private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Label label8_7;
         private System.Windows.Forms.Label label8_6;
         private System.Windows.Forms.Label label8_5;
@@ -1651,7 +1777,6 @@
         private System.Windows.Forms.Label label8_1;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label7_8;
-        private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Label label7_7;
         private System.Windows.Forms.Label label7_6;
         private System.Windows.Forms.Label label7_5;
@@ -1671,7 +1796,6 @@
         private System.Windows.Forms.Label label6_1;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label5_8;
-        private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Label label5_7;
         private System.Windows.Forms.Label label5_6;
         private System.Windows.Forms.Label label5_5;
@@ -1681,7 +1805,6 @@
         private System.Windows.Forms.Label label5_1;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label label4_8;
-        private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Label label4_7;
         private System.Windows.Forms.Label label4_6;
         private System.Windows.Forms.Label label4_5;
@@ -1691,7 +1814,6 @@
         private System.Windows.Forms.Label label4_1;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Label label3_8;
-        private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Label label3_7;
         private System.Windows.Forms.Label label3_6;
         private System.Windows.Forms.Label label3_5;
@@ -1701,7 +1823,6 @@
         private System.Windows.Forms.Label label3_1;
         private System.Windows.Forms.Panel panel5_1;
         private System.Windows.Forms.Label label2_8;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label2_7;
         private System.Windows.Forms.Label label2_6;
         private System.Windows.Forms.Label label2_5;
@@ -1726,11 +1847,27 @@
         private System.Windows.Forms.Label label8_3_1;
         private System.Windows.Forms.Label label7_3_1;
         private System.Windows.Forms.Label label6_3_1;
-        private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Label label5_3_1;
         private System.Windows.Forms.Label label4_3_1;
         private System.Windows.Forms.Label label3_3_1;
         private System.Windows.Forms.Label label2_3_1;
         private System.Windows.Forms.Label label1_3_1;
+        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button button25;
+        private System.Windows.Forms.Button button26;
+        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button7;
     }
 }

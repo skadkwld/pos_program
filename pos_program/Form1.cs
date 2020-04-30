@@ -23,8 +23,8 @@ namespace ook_pos_program
         string file = (string)@"C:\효과음5.wav";
         public delegate int delMessage(object sender, string strResult);
         public event delMessage eventdelMessage;
-        string strconn = string.Format(@"server=localhost;database=kiosk;user=root;password=1234");
-        //string strconn = string.Format(@"server=mydb.cmkvwrcpwpyc.ap-northeast-2.rds.amazonaws.com;database=ook;user=admin;password=young1700!");
+        //string strconn = string.Format(@"server=localhost;database=kiosk;user=root;password=1234");
+        string strconn = string.Format(@"server=mydb.cmkvwrcpwpyc.ap-northeast-2.rds.amazonaws.com;database=ook;user=admin;password=young1700!");
         order order = new order();
         adapter ad = new adapter();
         order_small small = new order_small();
@@ -415,9 +415,10 @@ namespace ook_pos_program
                 }
             }
 
-            confirm_order co = new confirm_order(strData, order.HowManyInsert, order.price);
+            //confirm_order co = new confirm_order(strData, order.HowManyInsert, order.price);
+            confirm_order co = new confirm_order();
             co.Show();
-            MessageBox.Show(new_row.ToString());
+            //MessageBox.Show(new_row.ToString());
 
         }
 
